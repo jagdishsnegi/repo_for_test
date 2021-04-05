@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Additional_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Alternate_Phone_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Alternate Phone No</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Therapist</fullName>
+                    <default>false</default>
+                    <label>Therapist</label>
+                </value>
+                <value>
+                    <fullName>Psychologist</fullName>
+                    <default>false</default>
+                    <label>Psychologist</label>
+                </value>
+                <value>
+                    <fullName>Psychiatrist</fullName>
+                    <default>false</default>
+                    <label>Psychiatrist</label>
+                </value>
+                <value>
+                    <fullName>Internal Medicine</fullName>
+                    <default>false</default>
+                    <label>Internal Medicine</label>
+                </value>
+                <value>
+                    <fullName>Interventionist</fullName>
+                    <default>false</default>
+                    <label>Interventionist</label>
+                </value>
+                <value>
+                    <fullName>Sober Escort</fullName>
+                    <default>false</default>
+                    <label>Sober Escort</label>
+                </value>
+                <value>
+                    <fullName>Community Member</fullName>
+                    <default>false</default>
+                    <label>Community Member</label>
+                </value>
+                <value>
+                    <fullName>Admissions</fullName>
+                    <default>false</default>
+                    <label>Admissions</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Credentials__c</fullName>
+        <externalId>false</externalId>
+        <label>Credentials</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Opt_In__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Email Opt In</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notes_on_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes on Provider</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Practice_Speciality__c</fullName>
+        <externalId>false</externalId>
+        <label>Practice Speciality</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Addictions</fullName>
+                    <default>false</default>
+                    <label>Addictions</label>
+                </value>
+                <value>
+                    <fullName>Anxiety disorders</fullName>
+                    <default>false</default>
+                    <label>Anxiety disorders</label>
+                </value>
+                <value>
+                    <fullName>Chronic Pain</fullName>
+                    <default>false</default>
+                    <label>Chronic Pain</label>
+                </value>
+                <value>
+                    <fullName>Conduct Disorders</fullName>
+                    <default>false</default>
+                    <label>Conduct Disorders</label>
+                </value>
+                <value>
+                    <fullName>Developmental Disorders</fullName>
+                    <default>false</default>
+                    <label>Developmental Disorders</label>
+                </value>
+                <value>
+                    <fullName>Eating Disorders</fullName>
+                    <default>false</default>
+                    <label>Eating Disorders</label>
+                </value>
+                <value>
+                    <fullName>Mood Disorders</fullName>
+                    <default>false</default>
+                    <label>Mood Disorders</label>
+                </value>
+                <value>
+                    <fullName>Trauma</fullName>
+                    <default>false</default>
+                    <label>Trauma</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Treatment_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Treatment Method</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ACT</fullName>
+                    <default>false</default>
+                    <label>ACT</label>
+                </value>
+                <value>
+                    <fullName>CBT</fullName>
+                    <default>false</default>
+                    <label>CBT</label>
+                </value>
+                <value>
+                    <fullName>DBT</fullName>
+                    <default>false</default>
+                    <label>DBT</label>
+                </value>
+                <value>
+                    <fullName>ED Consultant</fullName>
+                    <default>false</default>
+                    <label>ED Consultant</label>
+                </value>
+                <value>
+                    <fullName>EMDR</fullName>
+                    <default>false</default>
+                    <label>EMDR</label>
+                </value>
+                <value>
+                    <fullName>Family Therapy</fullName>
+                    <default>false</default>
+                    <label>Family Therapy</label>
+                </value>
+                <value>
+                    <fullName>Group Therapy</fullName>
+                    <default>false</default>
+                    <label>Group Therapy</label>
+                </value>
+                <value>
+                    <fullName>Individual Therapy</fullName>
+                    <default>false</default>
+                    <label>Individual Therapy</label>
+                </value>
+                <value>
+                    <fullName>Interventions</fullName>
+                    <default>false</default>
+                    <label>Interventions</label>
+                </value>
+                <value>
+                    <fullName>Marital Therapy</fullName>
+                    <default>false</default>
+                    <label>Marital Therapy</label>
+                </value>
+                <value>
+                    <fullName>Play Therapy</fullName>
+                    <default>false</default>
+                    <label>Play Therapy</label>
+                </value>
+                <value>
+                    <fullName>Psychodrama</fullName>
+                    <default>false</default>
+                    <label>Psychodrama</label>
+                </value>
+                <value>
+                    <fullName>Psychopharmacology</fullName>
+                    <default>false</default>
+                    <label>Psychopharmacology</label>
+                </value>
+                <value>
+                    <fullName>Couples Counseling</fullName>
+                    <default>false</default>
+                    <label>Couples Counseling</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+</CustomObject>
