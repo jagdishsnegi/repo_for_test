@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>approval rejected of pre-assesment</name>
+    <style>none</style>
+    <subject>approver rejected this pre-assesment</subject>
+    <textOnly>Hi Team,
+{!PreAssesment__c.Name} has been rejected by approver.
+Approver Comments: {!ApprovalRequest.Comments}
+
+Infinite Recovery Services
+
+Infinite Recovery - 6404 Ridge Oak Rd
+
+Austin, Texas 78749
+
+www.infiniterecovery.com
+
+This email and any files transmitted with it are confidential and are intended solely for the use of the individual or entity to which they are addressed. This communication may contain material protected by HIPAA legislation (45 CFR, Parts 160 &amp; 164). If you are not the intended recipient or the person responsible for delivering this email to the intended recipient, be advised that you have received this email in error and that any use, dissemination, forwarding, printing or copying of this email is strictly prohibited. If you have received this email in error, please notify the sender by replying to this email and then delete the email from your computer.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

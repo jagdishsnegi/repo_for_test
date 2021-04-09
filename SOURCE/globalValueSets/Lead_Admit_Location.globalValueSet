@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Maryland</fullName>
+        <default>false</default>
+        <label>Maryland</label>
+    </customValue>
+    <customValue>
+        <fullName>Westwind Recovery</fullName>
+        <default>false</default>
+        <label>Westwind Recovery</label>
+    </customValue>
+    <masterLabel>Lead Admit Location</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

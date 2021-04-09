@@ -1,0 +1,360 @@
+<messaging:emailTemplate subject="New Arrival Email" recipientType="User" relatedToType="Opportunity">
+
+
+<messaging:htmlEmailBody >
+    
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"/>
+    <style>
+    table.main-table {
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; 
+        width:100%; margin: 0 auto; font-family: 'Roboto', sans-serif; font-size: 12px;
+}   
+
+table.detailList
+{
+ width:100% ;margin: 0 auto; font-family: 'Roboto', sans-serif;
+}
+.detailList  tr td
+{
+text-align:left;padding:5px 10px;font-size:12px;width:25%;
+}
+
+.detailList  tr th
+{
+text-align:right;padding:5px 10px;font-size:12px;width:25%
+}
+</style>
+</head>
+<body>
+<table class="detailList" border="0" cellpadding="0" cellspacing="0">
+ 
+<tr>
+<p>Hi Team!</p>
+<!--
+<td style="line-height:2"><a href="https://test.salesforce.com/{!relatedTo.Id}" style="text-decoration: none; box-shadow: 0px 0px 4px 0px #ccc; color: #541414; border: 1px solid #ccc; border-radius:5px; padding: 5px; margin: 0px 10px 0 0;">
+                        {!relatedTo.full_name__c}</a> Is Arriving for Admission.</td>-->
+ <apex:outputLink value="https://test.salesforce.com/{!relatedTo.Id}">{!relatedTo.Client_Last_Name__c}  
+  </apex:outputLink> 
+  Is Arriving for Admission.
+</tr>
+<tr>
+                    <td style="text-align: center;">
+                        <h4>Admission Information</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Name: </b>{!relatedTo.Name}
+                    </td>
+                </tr>
+                
+                 <tr>
+                    <td style="padding: 5px 25px;">
+                    <b>Date of Birth:</b>
+                     <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                                 <apex:param value="{!relatedTo.Client_DOB__c}" /> 
+                            </apex:outputText>
+                      
+                    </td>
+                </tr>
+             
+   <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Phone Number: </b>{!relatedTo.Primary_Phone__c}
+                    </td>
+                </tr>
+              
+               
+                <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Address: </b>{!relatedTo.Country__c}
+                    </td>
+                </tr>
+<tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Date of Admission: </b>
+{!relatedTo.Admitted__c}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Arrival Time: </b>
+                        {!relatedTo.Arrival_Date__c}
+                    </td>
+                </tr>
+               <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Referral Source: </b>
+                        {!relatedTo.LeadSource}
+                    </td>
+                </tr>
+           <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">ROI/Primary Contact: </b>
+                        {!relatedTo.Caller_First_Name__c}
+                    </td>
+                </tr>
+           <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Primary Contact Phone Number: </b>
+                        {!relatedTo.Caller_Phone__c}
+                    </td>
+                </tr>
+          <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Financially responsible party email: </b>
+                        {!relatedTo.Subscriber_Email__c}
+                    </td>
+                </tr>
+               <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Level of care admitting into: </b>
+                        {!relatedTo.LOC__c}
+                    </td>
+                </tr>
+             <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Level of care stepping into: </b>
+                        {!relatedTo.Level_of_care_stepping_into__c}
+                    </td>
+                </tr>
+              <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Insurance/other resources: </b>
+                        {!relatedTo.Insurance_Provider__r.name}
+                    </td>
+                </tr>
+              <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Financially Responsible Party: </b>
+                        {!relatedTo.Subscriber_First_Name__c}
+                    </td>
+                </tr>
+              <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Condition Treated: </b>
+                        {!relatedTo.Condition_Treated__c}
+                    </td>
+                </tr>
+             <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Primary Counselor: </b>
+                        {!relatedTo.Primary_Counselor__c}
+                    </td>
+                </tr>
+              <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Number of sessions: </b>
+                        {!relatedTo.Number_of_sessions__c}
+                    </td>
+                </tr>
+              <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Projected Discharge Date: </b>
+                        {!relatedTo.Projected_Discharge_Date__c}
+                    </td>
+                </tr>
+            <tr>
+                    <td style="padding: 5px 25px;">
+                        <b style="font-weight: 5px;">Clients Plan for Treatment: </b>
+                        {!relatedTo.Client_s_Plan_for_Treatment__c}
+                    </td>
+                </tr>
+             
+
+
+  <tr><td style="border-bottom: 5px solid #0e426a;padding-top:10px"></td></tr>
+                <tr>
+                 <td style="padding:2px 10px 0px; text-align: left; margin:0">
+<center><img id="IRLOGO:" src="https://infiniterecovery--partial--c.cs36.content.force.com/servlet/servlet.FileDownload?file=0152h000000DqXI" jsaction="load:str.tbn" class="rg_ic rg_i" style="width: 185px; height: 175px; margin-left: 35px; margin-right: 35px; margin-top: 0px;" data-atf="1" alt='logo'/></center>
+              
+                   </td>
+                   </tr>
+                   <tr>
+                   <td style="text-align:center">
+                        <center><p style="margin:0">Infinite Recovery Services</p></center>
+                        </td>
+                        </tr>
+    <tr><td style="text-align:center">                    
+<center><p style="margin:0">Infinite Recovery - 6404 Ridge Oak Rd</p></center></td></tr>
+
+ 
+
+<tr><td  style="text-align:center"><center><p style="margin:0"> Austin, Texas 78749</p></center>
+</td>
+</tr>
+<tr><td style="text-align:center">
+<p>   <center> <a href="https://www.infiniterecovery.com/">www.infiniterecovery.com</a></center></p>
+</td></tr>
+
+
+</table>
+</body>
+</messaging:htmlEmailBody>
+<messaging:attachment renderAs="PDF" filename="Pre-Assesments.pdf">
+<apex:repeat var="line" value="{!relatedTo.Pre_Assessments__r}">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"/>
+    <style>
+    table.main-table {
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; 
+        width:100%; margin: 0 auto; font-family: 'Roboto', sans-serif; font-size: 12px;
+}   
+
+table.detailList
+{
+ width:100% ;margin: 0 auto; font-family: 'Roboto', sans-serif;
+}
+.detailList  tr td
+{
+text-align:left;padding:5px 10px;font-size:12px;width:25%;
+}
+
+.detailList  tr th
+{
+text-align:right;padding:5px 10px;font-size:12px;width:25%
+}
+</style>
+</head>
+<body>
+<table class="main-table" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="padding-top: 10px;
+    padding-bottom: 5px"><apex:image id="theImage" value="https://infiniterecovery--partial--c.cs36.content.force.com/servlet/servlet.ImageServer?id=0152h000000DqXI&oid=00D2h0000008iBw&lastMod=1575893114000" width="180" alt="Infinite Recovery"/></td>
+   
+
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td colspan="6" style="padding-top: 10px;
+    padding-bottom: 5px"><h2>Pre-Assessment</h2></td>
+</tr>
+<tr >
+<td colspan="6" style="border-bottom: 2px solid black"></td>
+</tr>
+</table> 
+
+<table class="detailList" border="0" cellpadding="0" cellspacing="0">
+<tr>
+
+</tr>
+<tr style="margin:0 15px">
+<!--<td style="width:100px"></td>-->
+<th>Pre-Assessment Name</th>
+<td> <apex:outputField value="{!line.Name}"/> </td>
+<th>Patient Name</th>
+<td> <apex:outputField value="{!line.Patient_Name__c}"/></td>
+<!--<td style="width:100px"></td>-->
+</tr>
+
+
+
+
+
+<!--Medical Pre-Screen starts-->
+
+
+<tr>
+    <th colspan="6" style="text-align:left;background-color:#eeeeee;"><h2 style="margin:0;font-size:17px"> Medical Pre-Screen Info</h2>
+   </th>
+</tr>
+
+<tr>
+
+<th> Substance Used </th>
+<td> <apex:outputField value="{!line.Substances_Used__c}"/></td>
+<th>Substance Used Details</th>
+<td><apex:outputField value="{!line.Substances_Use_History__c}"/> </td>
+
+</tr>
+
+<tr>
+
+<th>Co-Occuring Disorders </th>
+<td><apex:outputField value="{!line.Co_Ocurring_Disorders__c}"/> </td>
+<th>Date of Mental Health Diagnosis</th>
+<td><apex:outputField value="{!line.Date_of_Mental_Health_Diagnosis__c}"/></td>
+</tr>
+
+
+<tr>
+
+<th>Current on Medication?</th>
+<td> <apex:outputField value="{!line.Current_on_Medication__c}"/></td>
+<th>Is Medication Effective?</th>
+<td ><apex:outputField value="{!line.Is_Medication_Effective__c}"/></td>
+
+</tr>
+<tr>
+
+<th>Suicide Attempt Details</th>
+<td> <apex:outputField value="{!line.Sucide_Attempt_Details__c}"/></td>
+<th>Current Mood</th>
+<td><apex:outputField value="{!line.Current_Mood__c}"/></td>
+
+</tr>
+    
+<tr>
+
+<th>Self-Harm History</th>
+<td> <apex:outputField value="{!line.Self_Harm_History__c}"/></td>
+<th>Self-Harm Details</th>
+<td><apex:outputField value="{!line.Self_Harm_Details__c}"/></td>
+
+</tr>    
+<tr>
+
+<th>Date of Sucide Attempt</th>
+<td> <apex:outputField value="{!line.Date_of_Sucide_Attempt__c}"/></td>
+<th>Date of Self-Harm</th>
+<td><apex:outputField value="{!line.Date_of_Self_Harm__c}"/></td>
+
+</tr>   
+<tr>
+
+<th>Medical Diagnosis</th>
+<td> <apex:outputField value="{!line.Medical_Diagnosis__c}"/></td>
+<th>Taking Any Medications?</th>
+<td><apex:outputField value="{!line.Taking_Any_Medications__c}"/></td>
+
+</tr>   
+<tr>
+
+<th>Medical Diagnosis</th>
+<td> <apex:outputField value="{!line.Medical_Diagnosis__c}"/></td>
+<th>Taking Any Medications?</th>
+<td><apex:outputField value="{!line.Taking_Any_Medications__c}"/></td>
+
+</tr>   
+ <tr>
+
+<th>Anyone use Alcohol/ Drugs In Their Home?</th>
+<td> <apex:outputField value="{!line.Anyone_use_Alcohol_Drugs_In_Their_Home__c}"/></td>
+<th>Taking Them Regularly?</th>
+<td><apex:outputField value="{!line.Taking_Them_Regularly__c}"/></td>
+
+</tr>  
+<tr>
+
+<th>Seizure/ DT History</th>
+<td> <apex:outputField value="{!line.Seizure_DT_History__c}"/></td>
+<th>Any Previous Treatment?</th>
+<td><apex:outputField value="{!line.Any_Previous_Treatment__c}"/></td>
+
+</tr>  
+<tr>
+
+<th>Seizure/DT Description</th>
+<td> <apex:outputField value="{!line.Seizure_DT_Description__c}"/></td>
+<th>Any Legal History/ Consequences</th>
+<td><apex:outputField value="{!line.Any_Legal_History_Consequences__c}"/></td>
+
+</tr>  
+</table>
+
+   </body> 
+   </apex:repeat>
+    </messaging:attachment>
+
+</messaging:emailTemplate>

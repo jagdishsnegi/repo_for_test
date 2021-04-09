@@ -1,0 +1,337 @@
+<apex:page standardController="VOB__c" applyHtmlTag="false"  showHeader="False"   renderAs="PDF" sidebar="False">
+    
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"/>
+    <style>
+    table.main-table {
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; 
+        width:100%; margin: 0 auto; font-family: 'Roboto', sans-serif; font-size: 12px;
+}   
+
+table.detailList
+{
+ width:100% ;margin: 0 auto; font-family: 'Roboto', sans-serif;
+}
+.detailList  tr td
+{
+text-align:left;padding:5px 10px;font-size:12px;width:25%;
+}
+
+.detailList  tr th
+{
+text-align:right;padding:5px 10px;font-size:12px;width:25%
+}
+</style>
+</head>
+<body>
+<table class="main-table" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="padding-top: 0px;
+    padding-bottom: 5px"><apex:image id="theImage" value="{!$Resource.InfiniteLogo}" width="180" alt="Infinite Recovery"/></td>
+   
+<td></td>
+<td></td>   
+    
+    
+<td></td>
+<td></td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td colspan="6" style="padding-top: 0px;
+    padding-bottom: 10px"><h2>VOB</h2></td>
+</tr>
+<tr >
+<td colspan="6" style="border-bottom: 2px solid black"></td>
+</tr>
+</table> 
+
+<table class="detailList" border="0" cellpadding="0" cellspacing="0">
+<tr>
+
+</tr>
+<tr style="magin:0,10px">
+<!--<td style="width:100px"></td>-->
+<th>VOB Name</th>
+<td> <apex:outputField value="{!VOB__c.Name}"/> </td>
+<th>Patient Name</th>
+<td> <apex:outputField value="{!VOB__c.Patient_Name_admission__c}"/></td>
+<!--<td style="width:100px"></td>-->
+</tr>
+
+
+
+
+<!-- Demographic section open-->
+<tr>
+    <th colspan="6" style="text-align:left;background-color:#eeeeee;"><h2 style="margin:0;font-size:17px"> Demographics Details</h2>
+</th></tr>
+
+<tr>
+
+<th> Patient First Name </th>
+    <td> <apex:outputField value="{!VOB__c.Client_First_Name__c}"/></td>
+<th>Patient Last Name</th>
+<td>  <apex:outputField value="{!VOB__c.Client_Last_Name__c}"/></td>
+
+</tr>
+<tr>
+<th>Patient DOB</th>
+<td><apex:outputField value="{!VOB__c.Client_DOB__c}"/></td>
+<th>Address</th>
+<td><apex:outputField value="{!VOB__c.Subs_Address__c}"/></td>
+</tr>
+
+<tr>
+<th>Phone</th>
+<td><apex:outputField value="{!VOB__c.Client_DOB__c}"/></td>
+<th>Email</th>
+<td><apex:outputField value="{!VOB__c.Subs_Address__c}"/></td>
+</tr>
+
+<tr>
+<th>Subscriber First Name</th>
+<td><apex:outputField value="{!VOB__c.Name_of_subscriber__c}"/></td>
+<th>Subscriber Last Name</th>
+<td><apex:outputField value="{!VOB__c.Subscriber_Last_Name__c}"/></td>
+</tr>
+<tr>
+<th>Subscriber DOB</th>
+<td><apex:outputField value="{!VOB__c.Subscriber_DOB_New__c}"/></td>
+<th>Stage</th>
+<td><apex:outputField value="{!VOB__c.Stage__c}"/></td>
+</tr>
+<tr>
+<th></th>
+<td> </td>
+<th></th>
+<td ></td>
+
+</tr>
+
+<!-- Demographic section ends-->
+<!--Insurance Details Starts-->
+
+<tr>
+    <th colspan="6" style="text-align:left;background-color:#eeeeee;"><h2 style="margin:0;font-size:17px">Insurance Details</h2>
+   </th>
+</tr>
+<tr>
+<th>Insurance Provider</th>
+<td> <apex:outputField value="{!VOB__c.Insurance_Provider_lookup__c}"/></td>
+<th>Group Number</th>
+<td><apex:outputField value="{!VOB__c.Group_Number_New__c}"/></td>
+</tr>
+<tr>
+<th>Member Id</th>
+<td> <apex:outputField value="{!VOB__c.Member_ID_New__c}"/></td>
+<th>Benifits Number</th>
+<td><apex:outputField value="{!VOB__c.Benefits_Number__c}"/></td>
+</tr>
+<tr>
+<th>Insurance Policy Status</th>
+<td> <apex:outputField value="{!VOB__c.Insurance_Policy_Status__c}"/></td>
+<th>Authorization Number</th>
+<td><apex:outputField value="{!VOB__c.Authorization_Number__c}"/></td>
+</tr>
+<tr>
+    <th colspan="6" style="text-align:left;background-color:#eeeeee;"><h2 style="margin:0;font-size:17px">Deductibles</h2>
+   </th>
+</tr>
+      
+    <tr>
+
+<th>Plan Type</th>
+<td> <apex:outputField value="{!VOB__c.Plan_Type__c}"/></td>
+<th>Monthly</th>
+<td><apex:outputField value="{!VOB__c.Monthly__c}"/></td>
+
+</tr>
+     <tr>
+
+<th>Effective Date</th>
+<td> <apex:outputField value="{!VOB__c.Effective_Date__c}"/></td>
+<th>Term Date</th>
+<td><apex:outputField value="{!VOB__c.Term_Date__c}"/></td>
+
+</tr>
+    <tr>
+
+<th>Individual Deductible</th>
+<td> <apex:outputField value="{!VOB__c.Individual_Deductible__c}"/></td>
+<th>Amount Met $</th>
+<td><apex:outputField value="{!VOB__c.Amount_Met_indi__c}"/></td>
+
+</tr>
+    <tr>
+
+<th>Family Deductible</th>
+<td> <apex:outputField value="{!VOB__c.Family_Deductible__c}"/></td>
+<th>Amount Met $</th>
+<td><apex:outputField value="{!VOB__c.Amount_Met_Family__c}"/></td>
+
+</tr>
+    <tr>
+
+<th>Individual Out of Pocket</th>
+<td> <apex:outputField value="{!VOB__c.Individual_Out_of_Pocket__c}"/></td>
+<th>Amount Met $</th>
+<td><apex:outputField value="{!VOB__c.Amount_Met_IOOP__c}"/></td>
+
+</tr>
+    <tr>
+
+<th>Family Out of Pocket</th>
+<td> <apex:outputField value="{!VOB__c.Family_Out_of_Pocket__c}"/></td>
+<th>Amount Met $</th>
+<td><apex:outputField value="{!VOB__c.Amount_Met_FOOP__c}"/></td>
+
+</tr>
+<tr>
+
+<th>% insurance will pay out</th>
+<td> <apex:outputField value="{!VOB__c.percent_insurance_will_pay_out__c}"/></td>
+<th>After OOP</th>
+<td><apex:outputField value="{!VOB__c.After_OOP__c}"/></td>
+
+</tr>
+    <tr>
+<th>LOC</th>
+<td> <apex:outputField value="{!VOB__c.LOC__c}"/></td>
+</tr>
+<tr>
+    <th colspan="6" style="text-align:left;background-color:#eeeeee;"><h2 style="margin:0;font-size:17px">
+        
+        Informations</h2>
+   </th>
+</tr>
+<tr>
+<th>Does the OP copay apply to PHP and IOP LOC?
+</th>
+<td> <apex:outputField value="{!VOB__c.Does_the_outpatient_copay_apply_to_PHP__c}"/></td>
+    <th>If no, is there a copay for PHP aand IOP LOC?
+</th>
+<td><apex:outputField value="{!VOB__c.If_no_is_there_a_copay_for_PHP_IOP_LOC__c}"/></td> 
+</tr>
+<tr>
+<th>Is PHP considered an inpatient benefit?
+</th>
+<td> <apex:outputField value="{!VOB__c.Is_PHP_considered_an_inpatient_benefit__c}"/></td>
+    <th>Inpatient co pay?
+</th>
+<td><apex:outputField value="{!VOB__c.Inpatient_co_pay__c}"/></td> 
+</tr>
+<tr>
+<th>Outpatient co pay?
+</th>
+<td> <apex:outputField value="{!VOB__c.Outpatient_co_pay__c}"/></td>
+    <th>Is there a confinement ?
+</th>
+<td><apex:outputField value="{!VOB__c.Is_there_a_confinement__c}"/></td> 
+</tr>
+<tr>
+<th>Does the co-insurance apply to the OOP??</th>
+<td> <apex:outputField value="{!VOB__c.Does_the_coinsurance_apply_to_the_OOP__c}"/></td>
+    <th>Are Free Standing Facilities covered?
+</th>
+<td><apex:outputField value="{!VOB__c.Are_Free_Standing_Facilities_covered__c}"/></td> 
+</tr>
+<tr>
+<th>Does the deductible apply to the OOP?</th>
+<td> <apex:outputField value="{!VOB__c.Does_the_deductible_apply_to_the_OOP__c}"/></td>
+    <th>Are MH and SA benefits combined?</th>
+<td><apex:outputField value="{!VOB__c.Are_MH_and_SA_benefits_combined__c}"/></td>
+</tr>
+<tr>
+
+<th>Is there any HSA on this plan?</th>
+<td> <apex:outputField value="{!VOB__c.Is_there_any_HSA_on_this_plan__c}"/></td>
+    <th>Predetermined day max or med nessecity?</th>
+<td><apex:outputField value="{!VOB__c.Predetermined_day_max_or_med_nessecity__c	}"/></td>
+
+    </tr>
+
+ <tr>
+<th>Is there any lifetime max?</th>
+<td><apex:outputField value="{!VOB__c.Predetermined_day_max_or_med_nessecity__c	}"/></td>
+     <th>JCAHO accredited or state licensure?</th>
+<td><apex:outputField value="{!VOB__c.Predetermined_day_max_or_med_nessecity__c	}"/></td>
+
+</tr>
+  
+    <tr>
+<th>Behavioral health and subs abuse carved?</th>
+<td><apex:outputField value="{!VOB__c.Predetermined_day_max_or_med_nessecity__c	}"/></td>
+        <th>Reimbursement Rate
+</th>
+<td><apex:outputField value="{!VOB__c.Predetermined_day_max_or_med_nessecity__c	}"/></td>
+</tr>
+    
+<tr>
+<th>Out of state restrictions policy?</th>
+<td><apex:outputField value="{!VOB__c.Predetermined_day_max_or_med_nessecity__c	}"/></td>
+<th>What entity is processing the claims?</th>
+<td><apex:outputField value="{!VOB__c.Predetermined_day_max_or_med_nessecity__c	}"/></td>
+</tr>
+<tr>
+<th>Are sub-acute detoxes covered under this</th>
+<td><apex:outputField value="{!VOB__c.Are_sub_acute_detoxes_covered_under_this__c	}"/></td>
+<th>Are acute detox covered under this plan?</th>
+<td><apex:outputField value="{!VOB__c.Are_acute_detoxes_covered_under_this_pla__c	}"/></td>
+</tr>  
+<tr>
+    <th colspan="6" style="text-align:left;background-color:#eeeeee;"><h2 style="margin:0;font-size:17px">Additional Informations</h2>
+   </th>
+</tr>
+      
+    <tr>
+<th>Claim's Address
+</th>
+<td><apex:outputField value="{!VOB__c.Claim_s_Address__c	}"/></td>
+<th>Claim's City
+</th>
+<td><apex:outputField value="{!VOB__c.Claim_s_City__c}"/></td>
+</tr>
+      
+    <tr>
+<th>State
+</th>
+<td><apex:outputField value="{!VOB__c.Street__c	}"/></td>
+<th>Zip Code</th>
+<td><apex:outputField value="{!VOB__c.Zip__c}"/></td>
+</tr>
+      
+    <tr>
+<th>Is this the primary insurance policy?
+</th>
+<td><apex:outputField value="{!VOB__c.Is_this_the_primary_insurance_policy__c}"/></td>
+<th>If No, Provide more Info
+</th>
+<td><apex:outputField value="{!VOB__c.If_No_Provide__c	}"/></td>
+</tr>
+      
+    <tr>
+<th>Levels of care Pre-Authorization require</th>
+<td><apex:outputField value="{!VOB__c.Levels_of_care_is_Pre_Authorization_requ__c}"/></td>
+<th>Time And Date completed</th>
+<td><apex:outputField value="{!VOB__c.Time_And_Date_completed__c}"/></td>
+</tr>
+     <tr>
+<th>Payor ID</th>
+<td><apex:outputField value="{!VOB__c.Payor_ID__c}"/></td>
+<th>Name of Insurance Rep</th>
+<td><apex:outputField value="{!VOB__c.Name_of_Rep__c}"/></td>
+</tr>
+ <tr>
+
+<th>Name of person completing VOB</th>
+<td><apex:outputField value="{!VOB__c.Name_of_person_completing_VOB__c}"/></td>
+     <th>Policy specific Notes</th>
+<td><apex:outputField value="{!VOB__c.Policy_Specific_Notes__c}"/></td>
+</tr>
+</table>
+</body>
+
+
+
+</apex:page>

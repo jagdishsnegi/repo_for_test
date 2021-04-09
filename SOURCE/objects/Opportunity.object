@@ -1,0 +1,2829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Actual_Reimbursement__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Reimbursement</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Admission__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Prev Admission</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Admissions</relationshipLabel>
+        <relationshipName>Admissions</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Admission_with_LOC__c</fullName>
+        <externalId>false</externalId>
+        <formula>Client_First_Name__c + &quot; &quot;+Client_Last_Name__c +&quot;-&quot;+Text(LOC__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Admission with LOC</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Admitted_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Admitted Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Admitted__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Admission</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Alternate_Phone_No_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Alternate Phone No #1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Alternate_Phone_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Alternate Phone Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cell</fullName>
+                    <default>false</default>
+                    <label>Cell</label>
+                </value>
+                <value>
+                    <fullName>Home</fullName>
+                    <default>false</default>
+                    <label>Home</label>
+                </value>
+                <value>
+                    <fullName>Work</fullName>
+                    <default>false</default>
+                    <label>Work</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Alumni_Information__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Alumni Information</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Admissions (Alumni Information)</relationshipLabel>
+        <relationshipName>Admissions1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Amendments_Payment_Arrangements__c</fullName>
+        <externalId>false</externalId>
+        <label>Amendments / Payment Arrangements</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Amount1_Due__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Other__c + PHP_Housing__c + Cash_Pay_Rate__c + Sober_Living__c + Patient_Responsibility__c - Scholarship__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount Due</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Due__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount Due</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Met_Detox__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Insurance_Provider__r.Allowable_Detox__c *Detox__c) * Co_Insurance__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Met_IOP__c</fullName>
+        <externalId>false</externalId>
+        <formula>Insurance_Provider__r.Allowable_IOP__c * IOP__c * Co_Insurance__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Met_IPR__c</fullName>
+        <externalId>false</externalId>
+        <formula>Insurance_Provider__r.Allowable_ITR__c * IPR__c * Co_Insurance__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Met_PHP__c</fullName>
+        <externalId>false</externalId>
+        <formula>PHP__c *Insurance_Provider__r.Allowable_PHP__c * Co_Insurance__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Met_RTC__c</fullName>
+        <externalId>false</externalId>
+        <formula>Insurance_Provider__r.Allowable_RTC__c * RTC__c * Co_Insurance__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Buisness_Development_Information__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Buisness Development Information</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Admissions (Buisness Development Information)</relationshipLabel>
+        <relationshipName>Admissions5</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Caller_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Caller Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Caller_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Caller First Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Caller_Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Caller Last Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Caller_Phone_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Caller Phone Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cell</fullName>
+                    <default>false</default>
+                    <label>Cell</label>
+                </value>
+                <value>
+                    <fullName>Work</fullName>
+                    <default>false</default>
+                    <label>Work</label>
+                </value>
+                <value>
+                    <fullName>Home</fullName>
+                    <default>false</default>
+                    <label>Home</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Caller_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Caller Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Caller_Relationship_To_Client__c</fullName>
+        <externalId>false</externalId>
+        <label>Caller Relationship To Patient</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Self</fullName>
+                    <default>false</default>
+                    <label>Self</label>
+                </value>
+                <value>
+                    <fullName>Brother/Sister</fullName>
+                    <default>false</default>
+                    <label>Brother/Sister</label>
+                </value>
+                <value>
+                    <fullName>Child</fullName>
+                    <default>false</default>
+                    <label>Child</label>
+                </value>
+                <value>
+                    <fullName>GrandParent</fullName>
+                    <default>false</default>
+                    <label>GrandParent</label>
+                </value>
+                <value>
+                    <fullName>Guarantor</fullName>
+                    <default>false</default>
+                    <label>Guarantor</label>
+                </value>
+                <value>
+                    <fullName>Guardian</fullName>
+                    <default>false</default>
+                    <label>Guardian</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Callout_Sent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Callout Sent</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cash_Pay_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Cash Pay Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>City_Subscriber__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>City_insurance__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Client_DOB__c</fullName>
+        <externalId>false</externalId>
+        <label>Patient DOB</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Client_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Patient Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Client_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Patient First Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Client_Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Patient Last Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Client_Middle_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Patient Middle Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Client_s_Plan_for_Treatment__c</fullName>
+        <externalId>false</externalId>
+        <label>Client&apos;s Plan for Treatment</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Co_Insurance__c</fullName>
+        <externalId>false</externalId>
+        <label>Co-Insurance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Condition_Treated__c</fullName>
+        <externalId>false</externalId>
+        <label>Condition Treated</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>United States</fullName>
+                    <default>true</default>
+                    <label>United States</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DC_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DC Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Deductible__c</fullName>
+        <externalId>false</externalId>
+        <label>Deductible</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Detox__c</fullName>
+        <externalId>false</externalId>
+        <label>Detox</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Do_Not_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Do Not Contact</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Do_Not_Readmit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Do Not Readmit</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Drug_of_Choice__c</fullName>
+        <externalId>false</externalId>
+        <label>Drug of Choice</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Alcohol</fullName>
+                    <default>false</default>
+                    <label>Alcohol</label>
+                </value>
+                <value>
+                    <fullName>Barbiturates</fullName>
+                    <default>false</default>
+                    <label>Barbiturates</label>
+                </value>
+                <value>
+                    <fullName>Valium</fullName>
+                    <default>false</default>
+                    <label>Valium</label>
+                </value>
+                <value>
+                    <fullName>Ativan</fullName>
+                    <default>false</default>
+                    <label>Ativan</label>
+                </value>
+                <value>
+                    <fullName>Xanax</fullName>
+                    <default>false</default>
+                    <label>Xanax</label>
+                </value>
+                <value>
+                    <fullName>Librium</fullName>
+                    <default>false</default>
+                    <label>Librium</label>
+                </value>
+                <value>
+                    <fullName>Klonopin</fullName>
+                    <default>false</default>
+                    <label>Klonopin</label>
+                </value>
+                <value>
+                    <fullName>Cocaine</fullName>
+                    <default>false</default>
+                    <label>Cocaine</label>
+                </value>
+                <value>
+                    <fullName>Crack Cocaine</fullName>
+                    <default>false</default>
+                    <label>Crack Cocaine</label>
+                </value>
+                <value>
+                    <fullName>Crystal Meth</fullName>
+                    <default>false</default>
+                    <label>Crystal Meth</label>
+                </value>
+                <value>
+                    <fullName>Bath Salts</fullName>
+                    <default>false</default>
+                    <label>Bath Salts</label>
+                </value>
+                <value>
+                    <fullName>Adderall</fullName>
+                    <default>false</default>
+                    <label>Adderall</label>
+                </value>
+                <value>
+                    <fullName>Caffeine</fullName>
+                    <default>false</default>
+                    <label>Caffeine</label>
+                </value>
+                <value>
+                    <fullName>Cigarettes</fullName>
+                    <default>false</default>
+                    <label>Cigarettes</label>
+                </value>
+                <value>
+                    <fullName>PCP</fullName>
+                    <default>false</default>
+                    <label>PCP</label>
+                </value>
+                <value>
+                    <fullName>Angel Dust</fullName>
+                    <default>false</default>
+                    <label>Angel Dust</label>
+                </value>
+                <value>
+                    <fullName>Marijuana</fullName>
+                    <default>false</default>
+                    <label>Marijuana</label>
+                </value>
+                <value>
+                    <fullName>Synthetic Marijuana</fullName>
+                    <default>false</default>
+                    <label>Synthetic Marijuana</label>
+                </value>
+                <value>
+                    <fullName>THC</fullName>
+                    <default>false</default>
+                    <label>THC</label>
+                </value>
+                <value>
+                    <fullName>LSD</fullName>
+                    <default>false</default>
+                    <label>LSD</label>
+                </value>
+                <value>
+                    <fullName>Acid</fullName>
+                    <default>false</default>
+                    <label>Acid</label>
+                </value>
+                <value>
+                    <fullName>Heroin</fullName>
+                    <default>false</default>
+                    <label>Heroin</label>
+                </value>
+                <value>
+                    <fullName>Fentanyl</fullName>
+                    <default>false</default>
+                    <label>Fentanyl</label>
+                </value>
+                <value>
+                    <fullName>Percocet</fullName>
+                    <default>false</default>
+                    <label>Percocet</label>
+                </value>
+                <value>
+                    <fullName>Morphine</fullName>
+                    <default>false</default>
+                    <label>Morphine</label>
+                </value>
+                <value>
+                    <fullName>Kratom</fullName>
+                    <default>false</default>
+                    <label>Kratom</label>
+                </value>
+                <value>
+                    <fullName>Vicodin</fullName>
+                    <default>false</default>
+                    <label>Vicodin</label>
+                </value>
+                <value>
+                    <fullName>Dilaudid</fullName>
+                    <default>false</default>
+                    <label>Dilaudid</label>
+                </value>
+                <value>
+                    <fullName>Methadone</fullName>
+                    <default>false</default>
+                    <label>Methadone</label>
+                </value>
+                <value>
+                    <fullName>Suboxone</fullName>
+                    <default>false</default>
+                    <label>Suboxone</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Final Payment Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Emergency_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Emergency First Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Emergency_Relationship__c</fullName>
+        <externalId>false</externalId>
+        <label>Emergency Relationship</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Self</fullName>
+                    <default>false</default>
+                    <label>Self</label>
+                </value>
+                <value>
+                    <fullName>Brother/Sister</fullName>
+                    <default>false</default>
+                    <label>Brother/Sister</label>
+                </value>
+                <value>
+                    <fullName>Guardian</fullName>
+                    <default>false</default>
+                    <label>Guardian</label>
+                </value>
+                <value>
+                    <fullName>Child</fullName>
+                    <default>false</default>
+                    <label>Child</label>
+                </value>
+                <value>
+                    <fullName>Grandparent</fullName>
+                    <default>false</default>
+                    <label>Grandparent</label>
+                </value>
+                <value>
+                    <fullName>Friend</fullName>
+                    <default>false</default>
+                    <label>Friend</label>
+                </value>
+                <value>
+                    <fullName>Guarantor</fullName>
+                    <default>false</default>
+                    <label>Guarantor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Financial_TERMS__c</fullName>
+        <externalId>false</externalId>
+        <label>Financial Terms</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Full_Scholarship__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Full Scholarship</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Has_Secondary_Insurance__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Has Secondary Insurance</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IOP__c</fullName>
+        <externalId>false</externalId>
+        <label>IOP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IPR__c</fullName>
+        <externalId>false</externalId>
+        <label>IPR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Identifier_Gender__c</fullName>
+        <externalId>false</externalId>
+        <label>Identifier Gender</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Male</fullName>
+                    <default>false</default>
+                    <label>Male</label>
+                </value>
+                <value>
+                    <fullName>Female</fullName>
+                    <default>false</default>
+                    <label>Female</label>
+                </value>
+                <value>
+                    <fullName>Unable to Specify</fullName>
+                    <default>false</default>
+                    <label>Unable to Specify</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Installments_Per_Month__c</fullName>
+        <externalId>false</externalId>
+        <label>Installments By Frequency</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Insurance_Provider__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Insurance Provider</label>
+        <referenceTo>Payor__c</referenceTo>
+        <relationshipLabel>Admissions</relationshipLabel>
+        <relationshipName>Admissions</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Insurence_Provider1__c</fullName>
+        <externalId>false</externalId>
+        <label>Insurence Provider1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1199 Ben &amp; Pen Plan 13162</fullName>
+                    <default>false</default>
+                    <label>1199 Ben &amp; Pen Plan 13162</label>
+                </value>
+                <value>
+                    <fullName>Aetna - FL 60054</fullName>
+                    <default>false</default>
+                    <label>Aetna - FL 60054</label>
+                </value>
+                <value>
+                    <fullName>AETNA -SIGNATURE ADMINISTRATORS</fullName>
+                    <default>false</default>
+                    <label>AETNA -SIGNATURE ADMINISTRATORS</label>
+                </value>
+                <value>
+                    <fullName>ALICARE AMALGAMATED LIFE</fullName>
+                    <default>false</default>
+                    <label>ALICARE AMALGAMATED LIFE</label>
+                </value>
+                <value>
+                    <fullName>Allegiance Benefit Plan Management INC</fullName>
+                    <default>false</default>
+                    <label>Allegiance Benefit Plan Management INC</label>
+                </value>
+                <value>
+                    <fullName>Alliance Health and Life</fullName>
+                    <default>false</default>
+                    <label>Alliance Health and Life</label>
+                </value>
+                <value>
+                    <fullName>Alliant Health Plans of Georgia</fullName>
+                    <default>false</default>
+                    <label>Alliant Health Plans of Georgia</label>
+                </value>
+                <value>
+                    <fullName>Allied Benefits Systems</fullName>
+                    <default>false</default>
+                    <label>Allied Benefits Systems</label>
+                </value>
+                <value>
+                    <fullName>Allied Trades Assistance Progam</fullName>
+                    <default>false</default>
+                    <label>Allied Trades Assistance Progam</label>
+                </value>
+                <value>
+                    <fullName>Ambetter of Arkansas 68069</fullName>
+                    <default>false</default>
+                    <label>Ambetter of Arkansas 68069</label>
+                </value>
+                <value>
+                    <fullName>AMERAPLAN</fullName>
+                    <default>false</default>
+                    <label>AMERAPLAN</label>
+                </value>
+                <value>
+                    <fullName>Ameriben</fullName>
+                    <default>false</default>
+                    <label>Ameriben</label>
+                </value>
+                <value>
+                    <fullName>AmeriHealth Administrator</fullName>
+                    <default>false</default>
+                    <label>AmeriHealth Administrator</label>
+                </value>
+                <value>
+                    <fullName>AmeriHealth HMO</fullName>
+                    <default>false</default>
+                    <label>AmeriHealth HMO</label>
+                </value>
+                <value>
+                    <fullName>AMERIHEALTH OF NEW JERSEY</fullName>
+                    <default>false</default>
+                    <label>AMERIHEALTH OF NEW JERSEY</label>
+                </value>
+                <value>
+                    <fullName>ANTHEM BLUE CROSS OF CALIFORNIA</fullName>
+                    <default>false</default>
+                    <label>ANTHEM BLUE CROSS OF CALIFORNIA</label>
+                </value>
+                <value>
+                    <fullName>AUTOMATED BENEFIT SOLUTIONS FOR SMART HEATH</fullName>
+                    <default>false</default>
+                    <label>AUTOMATED BENEFIT SOLUTIONS FOR SMART HEATH</label>
+                </value>
+                <value>
+                    <fullName>AvMed</fullName>
+                    <default>false</default>
+                    <label>AvMed</label>
+                </value>
+                <value>
+                    <fullName>BCBS - AK (Premera)</fullName>
+                    <default>false</default>
+                    <label>BCBS - AK (Premera)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - AL</fullName>
+                    <default>false</default>
+                    <label>BCBS - AL</label>
+                </value>
+                <value>
+                    <fullName>BCBS - AR</fullName>
+                    <default>false</default>
+                    <label>BCBS - AR</label>
+                </value>
+                <value>
+                    <fullName>BCBS - AZ</fullName>
+                    <default>false</default>
+                    <label>BCBS - AZ</label>
+                </value>
+                <value>
+                    <fullName>BCBS - CO</fullName>
+                    <default>false</default>
+                    <label>BCBS - CO</label>
+                </value>
+                <value>
+                    <fullName>BCBS - CT (Anthem)</fullName>
+                    <default>false</default>
+                    <label>BCBS - CT (Anthem)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - DE (Highmark)</fullName>
+                    <default>false</default>
+                    <label>BCBS - DE (Highmark)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - Federal</fullName>
+                    <default>false</default>
+                    <label>BCBS - Federal</label>
+                </value>
+                <value>
+                    <fullName>BCBS - FL</fullName>
+                    <default>false</default>
+                    <label>BCBS - FL</label>
+                </value>
+                <value>
+                    <fullName>BCBS - GA</fullName>
+                    <default>false</default>
+                    <label>BCBS - GA</label>
+                </value>
+                <value>
+                    <fullName>BCBS - IA (Wellmark)</fullName>
+                    <default>false</default>
+                    <label>BCBS - IA (Wellmark)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - ID</fullName>
+                    <default>false</default>
+                    <label>BCBS - ID</label>
+                </value>
+                <value>
+                    <fullName>BCBS - ID (Regence)</fullName>
+                    <default>false</default>
+                    <label>BCBS - ID (Regence)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - IL</fullName>
+                    <default>false</default>
+                    <label>BCBS - IL</label>
+                </value>
+                <value>
+                    <fullName>BCBS - IN (Anthem)</fullName>
+                    <default>false</default>
+                    <label>BCBS - IN (Anthem)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - KS</fullName>
+                    <default>false</default>
+                    <label>BCBS - KS</label>
+                </value>
+                <value>
+                    <fullName>BCBS - KY (Anthem)</fullName>
+                    <default>false</default>
+                    <label>BCBS - KY (Anthem)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - LA</fullName>
+                    <default>false</default>
+                    <label>BCBS - LA</label>
+                </value>
+                <value>
+                    <fullName>BCBS - MA</fullName>
+                    <default>false</default>
+                    <label>BCBS - MA</label>
+                </value>
+                <value>
+                    <fullName>BCBS - MD (Carefirst)</fullName>
+                    <default>false</default>
+                    <label>BCBS - MD (Carefirst)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - ME (Anthem)</fullName>
+                    <default>false</default>
+                    <label>BCBS - ME (Anthem)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - MI</fullName>
+                    <default>false</default>
+                    <label>BCBS - MI</label>
+                </value>
+                <value>
+                    <fullName>BCBS - MN</fullName>
+                    <default>false</default>
+                    <label>BCBS - MN</label>
+                </value>
+                <value>
+                    <fullName>BCBS - MO (Anthem)</fullName>
+                    <default>false</default>
+                    <label>BCBS - MO (Anthem)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - MS</fullName>
+                    <default>false</default>
+                    <label>BCBS - MS</label>
+                </value>
+                <value>
+                    <fullName>BCBS - NC</fullName>
+                    <default>false</default>
+                    <label>BCBS - NC</label>
+                </value>
+                <value>
+                    <fullName>BCBS - ND</fullName>
+                    <default>false</default>
+                    <label>BCBS - ND</label>
+                </value>
+                <value>
+                    <fullName>BCBS - NE</fullName>
+                    <default>false</default>
+                    <label>BCBS - NE</label>
+                </value>
+                <value>
+                    <fullName>BCBS - NH (Anthem)</fullName>
+                    <default>false</default>
+                    <label>BCBS - NH (Anthem)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - NJ (Horizon)</fullName>
+                    <default>false</default>
+                    <label>BCBS - NJ (Horizon)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - NM</fullName>
+                    <default>false</default>
+                    <label>BCBS - NM</label>
+                </value>
+                <value>
+                    <fullName>BCBS - NV (Anthem)</fullName>
+                    <default>false</default>
+                    <label>BCBS - NV (Anthem)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - NY (Empire)</fullName>
+                    <default>false</default>
+                    <label>BCBS - NY (Empire)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - NY (Exceullus)</fullName>
+                    <default>false</default>
+                    <label>BCBS - NY (Exceullus)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - NY (Western)</fullName>
+                    <default>false</default>
+                    <label>BCBS - NY (Western)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - OH (Anthem)</fullName>
+                    <default>false</default>
+                    <label>BCBS - OH (Anthem)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - OH,IN,KY (Anthem Central Region)</fullName>
+                    <default>false</default>
+                    <label>BCBS - OH,IN,KY (Anthem Central Region)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - OK</fullName>
+                    <default>false</default>
+                    <label>BCBS - OK</label>
+                </value>
+                <value>
+                    <fullName>BCBS - OR (Regence)</fullName>
+                    <default>false</default>
+                    <label>BCBS - OR (Regence)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - PA (Capital Blue)</fullName>
+                    <default>false</default>
+                    <label>BCBS - PA (Capital Blue)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - PA (Highmark)</fullName>
+                    <default>false</default>
+                    <label>BCBS - PA (Highmark)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - RI</fullName>
+                    <default>false</default>
+                    <label>BCBS - RI</label>
+                </value>
+                <value>
+                    <fullName>BCBS - SC</fullName>
+                    <default>false</default>
+                    <label>BCBS - SC</label>
+                </value>
+                <value>
+                    <fullName>BCBS - SD</fullName>
+                    <default>false</default>
+                    <label>BCBS - SD</label>
+                </value>
+                <value>
+                    <fullName>BCBS - TN</fullName>
+                    <default>false</default>
+                    <label>BCBS - TN</label>
+                </value>
+                <value>
+                    <fullName>BCBS - TX</fullName>
+                    <default>false</default>
+                    <label>BCBS - TX</label>
+                </value>
+                <value>
+                    <fullName>BCBS - UT (Regence)</fullName>
+                    <default>false</default>
+                    <label>BCBS - UT (Regence)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - VA (Anthem)</fullName>
+                    <default>false</default>
+                    <label>BCBS - VA (Anthem)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - VT</fullName>
+                    <default>false</default>
+                    <label>BCBS - VT</label>
+                </value>
+                <value>
+                    <fullName>BCBS - WA (Premera)</fullName>
+                    <default>false</default>
+                    <label>BCBS - WA (Premera)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - WA (Regence)</fullName>
+                    <default>false</default>
+                    <label>BCBS - WA (Regence)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - WI (Anthem)</fullName>
+                    <default>false</default>
+                    <label>BCBS - WI (Anthem)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - WV (Highmark)</fullName>
+                    <default>false</default>
+                    <label>BCBS - WV (Highmark)</label>
+                </value>
+                <value>
+                    <fullName>BCBS - WY</fullName>
+                    <default>false</default>
+                    <label>BCBS - WY</label>
+                </value>
+                <value>
+                    <fullName>Beacon Health Options - VALOP</fullName>
+                    <default>false</default>
+                    <label>Beacon Health Options - VALOP</label>
+                </value>
+                <value>
+                    <fullName>Beacon Health Stategies</fullName>
+                    <default>false</default>
+                    <label>Beacon Health Stategies</label>
+                </value>
+                <value>
+                    <fullName>BEHAVIORAL HEALTH SYSTEMS</fullName>
+                    <default>false</default>
+                    <label>BEHAVIORAL HEALTH SYSTEMS</label>
+                </value>
+                <value>
+                    <fullName>CALIFORNIA BLUE SHIELD</fullName>
+                    <default>false</default>
+                    <label>CALIFORNIA BLUE SHIELD</label>
+                </value>
+                <value>
+                    <fullName>CALIFORNIA FEDERAL</fullName>
+                    <default>false</default>
+                    <label>CALIFORNIA FEDERAL</label>
+                </value>
+                <value>
+                    <fullName>Capital District Physicians Health Plan (CDPHP)</fullName>
+                    <default>false</default>
+                    <label>Capital District Physicians Health Plan (CDPHP)</label>
+                </value>
+                <value>
+                    <fullName>CARESOURCE OF OHIO</fullName>
+                    <default>false</default>
+                    <label>CARESOURCE OF OHIO</label>
+                </value>
+                <value>
+                    <fullName>Central States Health Welfare Funds</fullName>
+                    <default>false</default>
+                    <label>Central States Health Welfare Funds</label>
+                </value>
+                <value>
+                    <fullName>CHRISTIAN BROTHER SERVICES</fullName>
+                    <default>false</default>
+                    <label>CHRISTIAN BROTHER SERVICES</label>
+                </value>
+                <value>
+                    <fullName>Cigna</fullName>
+                    <default>false</default>
+                    <label>Cigna</label>
+                </value>
+                <value>
+                    <fullName>Common Ground Healthcare</fullName>
+                    <default>false</default>
+                    <label>Common Ground Healthcare</label>
+                </value>
+                <value>
+                    <fullName>COMMUNITY CARE</fullName>
+                    <default>false</default>
+                    <label>COMMUNITY CARE</label>
+                </value>
+                <value>
+                    <fullName>ComPsych</fullName>
+                    <default>false</default>
+                    <label>ComPsych</label>
+                </value>
+                <value>
+                    <fullName>Conifer Health Solutions</fullName>
+                    <default>false</default>
+                    <label>Conifer Health Solutions</label>
+                </value>
+                <value>
+                    <fullName>CONNECTICARE</fullName>
+                    <default>false</default>
+                    <label>CONNECTICARE</label>
+                </value>
+                <value>
+                    <fullName>CORESOURCE INC</fullName>
+                    <default>false</default>
+                    <label>CORESOURCE INC</label>
+                </value>
+                <value>
+                    <fullName>Cornerstone Preferred Resources</fullName>
+                    <default>false</default>
+                    <label>Cornerstone Preferred Resources</label>
+                </value>
+                <value>
+                    <fullName>Coventry Health Care</fullName>
+                    <default>false</default>
+                    <label>Coventry Health Care</label>
+                </value>
+                <value>
+                    <fullName>District Council 21</fullName>
+                    <default>false</default>
+                    <label>District Council 21</label>
+                </value>
+                <value>
+                    <fullName>EBMS</fullName>
+                    <default>false</default>
+                    <label>EBMS</label>
+                </value>
+                <value>
+                    <fullName>ECOH</fullName>
+                    <default>false</default>
+                    <label>ECOH</label>
+                </value>
+                <value>
+                    <fullName>Emblem Health GHI</fullName>
+                    <default>false</default>
+                    <label>Emblem Health GHI</label>
+                </value>
+                <value>
+                    <fullName>EMI Health</fullName>
+                    <default>false</default>
+                    <label>EMI Health</label>
+                </value>
+                <value>
+                    <fullName>EMPIRE UHC</fullName>
+                    <default>false</default>
+                    <label>EMPIRE UHC</label>
+                </value>
+                <value>
+                    <fullName>ENTERPRISE GROUP PLANNING</fullName>
+                    <default>false</default>
+                    <label>ENTERPRISE GROUP PLANNING</label>
+                </value>
+                <value>
+                    <fullName>Evercrest</fullName>
+                    <default>false</default>
+                    <label>Evercrest</label>
+                </value>
+                <value>
+                    <fullName>First Choice Health Plans</fullName>
+                    <default>false</default>
+                    <label>First Choice Health Plans</label>
+                </value>
+                <value>
+                    <fullName>Florida Healthcare Plan</fullName>
+                    <default>false</default>
+                    <label>Florida Healthcare Plan</label>
+                </value>
+                <value>
+                    <fullName>GEISINGER INSURANCE</fullName>
+                    <default>false</default>
+                    <label>GEISINGER INSURANCE</label>
+                </value>
+                <value>
+                    <fullName>Gilsbar</fullName>
+                    <default>false</default>
+                    <label>Gilsbar</label>
+                </value>
+                <value>
+                    <fullName>Gold Coast</fullName>
+                    <default>false</default>
+                    <label>Gold Coast</label>
+                </value>
+                <value>
+                    <fullName>Golden Rule</fullName>
+                    <default>false</default>
+                    <label>Golden Rule</label>
+                </value>
+                <value>
+                    <fullName>Government Employees Health Associarion</fullName>
+                    <default>false</default>
+                    <label>Government Employees Health Associarion</label>
+                </value>
+                <value>
+                    <fullName>Government Employees Hospital Association (GEHA)</fullName>
+                    <default>false</default>
+                    <label>Government Employees Hospital Association (GEHA)</label>
+                </value>
+                <value>
+                    <fullName>Group and Pension Administrators</fullName>
+                    <default>false</default>
+                    <label>Group and Pension Administrators</label>
+                </value>
+                <value>
+                    <fullName>HARDSHIP</fullName>
+                    <default>false</default>
+                    <label>HARDSHIP</label>
+                </value>
+                <value>
+                    <fullName>Hartland Employer Benefits-Paper Claims</fullName>
+                    <default>false</default>
+                    <label>Hartland Employer Benefits-Paper Claims</label>
+                </value>
+                <value>
+                    <fullName>Harvard Pilgrim Health Care</fullName>
+                    <default>false</default>
+                    <label>Harvard Pilgrim Health Care</label>
+                </value>
+                <value>
+                    <fullName>HEALTH ALLIANCE PLAN</fullName>
+                    <default>false</default>
+                    <label>HEALTH ALLIANCE PLAN</label>
+                </value>
+                <value>
+                    <fullName>Health First Health Plans</fullName>
+                    <default>false</default>
+                    <label>Health First Health Plans</label>
+                </value>
+                <value>
+                    <fullName>Health Net</fullName>
+                    <default>false</default>
+                    <label>Health Net</label>
+                </value>
+                <value>
+                    <fullName>HEALTH NEW ENGLAND</fullName>
+                    <default>false</default>
+                    <label>HEALTH NEW ENGLAND</label>
+                </value>
+                <value>
+                    <fullName>HEALTH OPTIONS PROGRAM</fullName>
+                    <default>false</default>
+                    <label>HEALTH OPTIONS PROGRAM</label>
+                </value>
+                <value>
+                    <fullName>Health Partners (send paper)</fullName>
+                    <default>false</default>
+                    <label>Health Partners (send paper)</label>
+                </value>
+                <value>
+                    <fullName>Health Smart</fullName>
+                    <default>false</default>
+                    <label>Health Smart</label>
+                </value>
+                <value>
+                    <fullName>Healthcare Management Administrators (HMA)</fullName>
+                    <default>false</default>
+                    <label>Healthcare Management Administrators (HMA)</label>
+                </value>
+                <value>
+                    <fullName>HealthComp</fullName>
+                    <default>false</default>
+                    <label>HealthComp</label>
+                </value>
+                <value>
+                    <fullName>Healthlink</fullName>
+                    <default>false</default>
+                    <label>Healthlink</label>
+                </value>
+                <value>
+                    <fullName>HealthScope Benefits</fullName>
+                    <default>false</default>
+                    <label>HealthScope Benefits</label>
+                </value>
+                <value>
+                    <fullName>Humana</fullName>
+                    <default>false</default>
+                    <label>Humana</label>
+                </value>
+                <value>
+                    <fullName>Independence Administrators</fullName>
+                    <default>false</default>
+                    <label>Independence Administrators</label>
+                </value>
+                <value>
+                    <fullName>Independence BCBS</fullName>
+                    <default>false</default>
+                    <label>Independence BCBS</label>
+                </value>
+                <value>
+                    <fullName>Independent Health</fullName>
+                    <default>false</default>
+                    <label>Independent Health</label>
+                </value>
+                <value>
+                    <fullName>Indiana ProHealth Network</fullName>
+                    <default>false</default>
+                    <label>Indiana ProHealth Network</label>
+                </value>
+                <value>
+                    <fullName>INSURANCE DESIGN ADMINISTRATORS</fullName>
+                    <default>false</default>
+                    <label>INSURANCE DESIGN ADMINISTRATORS</label>
+                </value>
+                <value>
+                    <fullName>Iron Workers District Council</fullName>
+                    <default>false</default>
+                    <label>Iron Workers District Council</label>
+                </value>
+                <value>
+                    <fullName>John Hopkins Health Paper</fullName>
+                    <default>false</default>
+                    <label>John Hopkins Health Paper</label>
+                </value>
+                <value>
+                    <fullName>Lifestyle Health Plans</fullName>
+                    <default>false</default>
+                    <label>Lifestyle Health Plans</label>
+                </value>
+                <value>
+                    <fullName>Lifewise Oregon</fullName>
+                    <default>false</default>
+                    <label>Lifewise Oregon</label>
+                </value>
+                <value>
+                    <fullName>Lifewise Washington</fullName>
+                    <default>false</default>
+                    <label>Lifewise Washington</label>
+                </value>
+                <value>
+                    <fullName>LOCAL 102</fullName>
+                    <default>false</default>
+                    <label>LOCAL 102</label>
+                </value>
+                <value>
+                    <fullName>Lower Hudson Valley</fullName>
+                    <default>false</default>
+                    <label>Lower Hudson Valley</label>
+                </value>
+                <value>
+                    <fullName>Magellan</fullName>
+                    <default>false</default>
+                    <label>Magellan</label>
+                </value>
+                <value>
+                    <fullName>Magna Care</fullName>
+                    <default>false</default>
+                    <label>Magna Care</label>
+                </value>
+                <value>
+                    <fullName>Mail Handlers- TX 60054</fullName>
+                    <default>false</default>
+                    <label>Mail Handlers- TX 60054</label>
+                </value>
+                <value>
+                    <fullName>Managed Health Network (MHN)</fullName>
+                    <default>false</default>
+                    <label>Managed Health Network (MHN)</label>
+                </value>
+                <value>
+                    <fullName>Medica</fullName>
+                    <default>false</default>
+                    <label>Medica</label>
+                </value>
+                <value>
+                    <fullName>Medical Mutual of Ohio</fullName>
+                    <default>false</default>
+                    <label>Medical Mutual of Ohio</label>
+                </value>
+                <value>
+                    <fullName>MEDICARE</fullName>
+                    <default>false</default>
+                    <label>MEDICARE</label>
+                </value>
+                <value>
+                    <fullName>MENTAL HEALTH CONSULTANTS INC.</fullName>
+                    <default>false</default>
+                    <label>MENTAL HEALTH CONSULTANTS INC.</label>
+                </value>
+                <value>
+                    <fullName>Meritain Health</fullName>
+                    <default>false</default>
+                    <label>Meritain Health</label>
+                </value>
+                <value>
+                    <fullName>MH Net</fullName>
+                    <default>false</default>
+                    <label>MH Net</label>
+                </value>
+                <value>
+                    <fullName>Mines &amp; Associate</fullName>
+                    <default>false</default>
+                    <label>Mines &amp; Associate</label>
+                </value>
+                <value>
+                    <fullName>Moda Health</fullName>
+                    <default>false</default>
+                    <label>Moda Health</label>
+                </value>
+                <value>
+                    <fullName>Mutual Health Services</fullName>
+                    <default>false</default>
+                    <label>Mutual Health Services</label>
+                </value>
+                <value>
+                    <fullName>MVP Health Care (Mohawk Valley)</fullName>
+                    <default>false</default>
+                    <label>MVP Health Care (Mohawk Valley)</label>
+                </value>
+                <value>
+                    <fullName>Network Health Plan of WI</fullName>
+                    <default>false</default>
+                    <label>Network Health Plan of WI</label>
+                </value>
+                <value>
+                    <fullName>Nevada Health Plans</fullName>
+                    <default>false</default>
+                    <label>Nevada Health Plans</label>
+                </value>
+                <value>
+                    <fullName>Operating Engineers Local #25</fullName>
+                    <default>false</default>
+                    <label>Operating Engineers Local #25</label>
+                </value>
+                <value>
+                    <fullName>Optima Insurance Company</fullName>
+                    <default>false</default>
+                    <label>Optima Insurance Company</label>
+                </value>
+                <value>
+                    <fullName>Optum Behavioral Health</fullName>
+                    <default>false</default>
+                    <label>Optum Behavioral Health</label>
+                </value>
+                <value>
+                    <fullName>Oxford UHC</fullName>
+                    <default>false</default>
+                    <label>Oxford UHC</label>
+                </value>
+                <value>
+                    <fullName>Paramount</fullName>
+                    <default>false</default>
+                    <label>Paramount</label>
+                </value>
+                <value>
+                    <fullName>Pat NY Uniont</fullName>
+                    <default>false</default>
+                    <label>Pat NY Uniont</label>
+                </value>
+                <value>
+                    <fullName>PENN BEHAVIORAL HEALTH</fullName>
+                    <default>false</default>
+                    <label>PENN BEHAVIORAL HEALTH</label>
+                </value>
+                <value>
+                    <fullName>PIPE TRADE SERVICES MN</fullName>
+                    <default>false</default>
+                    <label>PIPE TRADE SERVICES MN</label>
+                </value>
+                <value>
+                    <fullName>Plan Admin 37287</fullName>
+                    <default>false</default>
+                    <label>Plan Admin 37287</label>
+                </value>
+                <value>
+                    <fullName>Plumbers and Pipefitters - Paper Claim</fullName>
+                    <default>false</default>
+                    <label>Plumbers and Pipefitters - Paper Claim</label>
+                </value>
+                <value>
+                    <fullName>POMCO</fullName>
+                    <default>false</default>
+                    <label>POMCO</label>
+                </value>
+                <value>
+                    <fullName>Populytics - 23253</fullName>
+                    <default>false</default>
+                    <label>Populytics - 23253</label>
+                </value>
+                <value>
+                    <fullName>PREFERREDONE ADMINISTRATIVE SERVICES</fullName>
+                    <default>false</default>
+                    <label>PREFERREDONE ADMINISTRATIVE SERVICES</label>
+                </value>
+                <value>
+                    <fullName>Priority Health</fullName>
+                    <default>false</default>
+                    <label>Priority Health</label>
+                </value>
+                <value>
+                    <fullName>Providence Health Plans</fullName>
+                    <default>false</default>
+                    <label>Providence Health Plans</label>
+                </value>
+                <value>
+                    <fullName>QualCare Alliance Networks, Inc. (QANI)</fullName>
+                    <default>false</default>
+                    <label>QualCare Alliance Networks, Inc. (QANI)</label>
+                </value>
+                <value>
+                    <fullName>QualCare, Inc.</fullName>
+                    <default>false</default>
+                    <label>QualCare, Inc.</label>
+                </value>
+                <value>
+                    <fullName>QUALCHOICE MEDICAL INSURANCE</fullName>
+                    <default>false</default>
+                    <label>QUALCHOICE MEDICAL INSURANCE</label>
+                </value>
+                <value>
+                    <fullName>Quest Behavioral Health (Paper claims)</fullName>
+                    <default>false</default>
+                    <label>Quest Behavioral Health (Paper claims)</label>
+                </value>
+                <value>
+                    <fullName>Rehn and Associates</fullName>
+                    <default>false</default>
+                    <label>Rehn and Associates</label>
+                </value>
+                <value>
+                    <fullName>REMOVE FROM AGING</fullName>
+                    <default>false</default>
+                    <label>REMOVE FROM AGING</label>
+                </value>
+                <value>
+                    <fullName>Sanford Health Plan</fullName>
+                    <default>false</default>
+                    <label>Sanford Health Plan</label>
+                </value>
+                <value>
+                    <fullName>Scott and White Health Plan</fullName>
+                    <default>false</default>
+                    <label>Scott and White Health Plan</label>
+                </value>
+                <value>
+                    <fullName>Self-Pay</fullName>
+                    <default>false</default>
+                    <label>Self-Pay</label>
+                </value>
+                <value>
+                    <fullName>SEMINOLE TRIBE OF FLORIDA</fullName>
+                    <default>false</default>
+                    <label>SEMINOLE TRIBE OF FLORIDA</label>
+                </value>
+                <value>
+                    <fullName>SIERRA HEALTH AND LIFE</fullName>
+                    <default>false</default>
+                    <label>SIERRA HEALTH AND LIFE</label>
+                </value>
+                <value>
+                    <fullName>SIGNATURE CARE (PAPER CLAIMS)</fullName>
+                    <default>false</default>
+                    <label>SIGNATURE CARE (PAPER CLAIMS)</label>
+                </value>
+                <value>
+                    <fullName>South Central Preferred (Paper Claim)</fullName>
+                    <default>false</default>
+                    <label>South Central Preferred (Paper Claim)</label>
+                </value>
+                <value>
+                    <fullName>Southwest Service Administrators</fullName>
+                    <default>false</default>
+                    <label>Southwest Service Administrators</label>
+                </value>
+                <value>
+                    <fullName>Teacher Health Trust</fullName>
+                    <default>false</default>
+                    <label>Teacher Health Trust</label>
+                </value>
+                <value>
+                    <fullName>THE LOOMIS COMPANY</fullName>
+                    <default>false</default>
+                    <label>THE LOOMIS COMPANY</label>
+                </value>
+                <value>
+                    <fullName>TUFTS Health Plan</fullName>
+                    <default>false</default>
+                    <label>TUFTS Health Plan</label>
+                </value>
+                <value>
+                    <fullName>UMR</fullName>
+                    <default>false</default>
+                    <label>UMR</label>
+                </value>
+                <value>
+                    <fullName>UNI BEHAVIORAL HEALTH</fullName>
+                    <default>false</default>
+                    <label>UNI BEHAVIORAL HEALTH</label>
+                </value>
+                <value>
+                    <fullName>UNICARE</fullName>
+                    <default>false</default>
+                    <label>UNICARE</label>
+                </value>
+                <value>
+                    <fullName>United Healthcare</fullName>
+                    <default>false</default>
+                    <label>United Healthcare</label>
+                </value>
+                <value>
+                    <fullName>UNITED SHARED SERVICES</fullName>
+                    <default>false</default>
+                    <label>UNITED SHARED SERVICES</label>
+                </value>
+                <value>
+                    <fullName>University of Utah Health Plans</fullName>
+                    <default>false</default>
+                    <label>University of Utah Health Plans</label>
+                </value>
+                <value>
+                    <fullName>UPMC Health Plan</fullName>
+                    <default>false</default>
+                    <label>UPMC Health Plan</label>
+                </value>
+                <value>
+                    <fullName>VANTAGE HEALTH PLAN</fullName>
+                    <default>false</default>
+                    <label>VANTAGE HEALTH PLAN</label>
+                </value>
+                <value>
+                    <fullName>WEA TRUST</fullName>
+                    <default>false</default>
+                    <label>WEA TRUST</label>
+                </value>
+                <value>
+                    <fullName>WebTPA</fullName>
+                    <default>false</default>
+                    <label>WebTPA</label>
+                </value>
+                <value>
+                    <fullName>WISCONSIN PHYSICIAN SERVICE</fullName>
+                    <default>false</default>
+                    <label>WISCONSIN PHYSICIAN SERVICE</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LOC__c</fullName>
+        <externalId>false</externalId>
+        <label>LOC</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Detox</fullName>
+                    <default>false</default>
+                    <label>Detox</label>
+                </value>
+                <value>
+                    <fullName>IOP</fullName>
+                    <default>false</default>
+                    <label>IOP</label>
+                </value>
+                <value>
+                    <fullName>OP</fullName>
+                    <default>false</default>
+                    <label>OP</label>
+                </value>
+                <value>
+                    <fullName>PHP/Day-Night</fullName>
+                    <default>false</default>
+                    <label>PHP/Day-Night</label>
+                </value>
+                <value>
+                    <fullName>Residential</fullName>
+                    <default>false</default>
+                    <label>Residential</label>
+                </value>
+                <value>
+                    <fullName>Sober Living</fullName>
+                    <default>false</default>
+                    <label>Sober Living</label>
+                </value>
+                <value>
+                    <fullName>Outstanding balances</fullName>
+                    <default>false</default>
+                    <label>Outstanding balances</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LOC_for_Referrel__c</fullName>
+        <externalId>false</externalId>
+        <label>LOC for Referrel</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Detox</fullName>
+                    <default>false</default>
+                    <label>Detox</label>
+                </value>
+                <value>
+                    <fullName>IOP</fullName>
+                    <default>false</default>
+                    <label>IOP</label>
+                </value>
+                <value>
+                    <fullName>OP</fullName>
+                    <default>false</default>
+                    <label>OP</label>
+                </value>
+                <value>
+                    <fullName>PHP/Day-Night</fullName>
+                    <default>false</default>
+                    <label>PHP/Day-Night</label>
+                </value>
+                <value>
+                    <fullName>Residential</fullName>
+                    <default>false</default>
+                    <label>Residential</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Last_Payment_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial Payment Due Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Level_of_care_stepping_into__c</fullName>
+        <externalId>false</externalId>
+        <label>Level of care stepping into</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Detox</fullName>
+                    <default>false</default>
+                    <label>Detox</label>
+                </value>
+                <value>
+                    <fullName>IOP</fullName>
+                    <default>false</default>
+                    <label>IOP</label>
+                </value>
+                <value>
+                    <fullName>OP</fullName>
+                    <default>false</default>
+                    <label>OP</label>
+                </value>
+                <value>
+                    <fullName>PHP/Day-Night</fullName>
+                    <default>false</default>
+                    <label>PHP/Day-Night</label>
+                </value>
+                <value>
+                    <fullName>Residential</fullName>
+                    <default>false</default>
+                    <label>Residential</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MRN__c</fullName>
+        <externalId>false</externalId>
+        <label>MRN#</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Marital_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Marital Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Married</fullName>
+                    <default>false</default>
+                    <label>Married</label>
+                </value>
+                <value>
+                    <fullName>Unmarried</fullName>
+                    <default>false</default>
+                    <label>Unmarried</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Medical_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Medical Group #</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Medical_Insurance_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Medical Insurance Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Medical_Member_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Medical Member ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OOP__c</fullName>
+        <externalId>false</externalId>
+        <label>OOP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>OP__c</fullName>
+        <externalId>false</externalId>
+        <label>OP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Information__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Information</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other__c</fullName>
+        <externalId>false</externalId>
+        <label>Other</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PHP_Housing__c</fullName>
+        <externalId>false</externalId>
+        <label>PHP Housing</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PHP__c</fullName>
+        <externalId>false</externalId>
+        <label>PHP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Patient_Responsibility__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated Patient Responsibility</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Frequency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Daily</fullName>
+                    <default>false</default>
+                    <label>Daily</label>
+                </value>
+                <value>
+                    <fullName>Weekly</fullName>
+                    <default>false</default>
+                    <label>Weekly</label>
+                </value>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                    <label>Monthly</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Phone_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cell</fullName>
+                    <default>false</default>
+                    <label>Cell</label>
+                </value>
+                <value>
+                    <fullName>Home</fullName>
+                    <default>false</default>
+                    <label>Home</label>
+                </value>
+                <value>
+                    <fullName>Work</fullName>
+                    <default>false</default>
+                    <label>Work</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Preferred_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Preferred Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Preffered_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Preffered Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Counselor__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Counselor</label>
+        <length>60</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Private_Pay__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Private Pay</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RTC__c</fullName>
+        <externalId>false</externalId>
+        <label>RTC</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reaon_for_Refer_Out__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for Refer Out</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Provider Preference</fullName>
+                    <default>false</default>
+                    <label>Provider Preference</label>
+                </value>
+                <value>
+                    <fullName>Patient Preference</fullName>
+                    <default>false</default>
+                    <label>Patient Preference</label>
+                </value>
+                <value>
+                    <fullName>Limited Provider Availability</fullName>
+                    <default>false</default>
+                    <label>Limited Provider Availability</label>
+                </value>
+                <value>
+                    <fullName>Service Not Offered</fullName>
+                    <default>false</default>
+                    <label>Service Not Offered</label>
+                </value>
+                <value>
+                    <fullName>Insurance Not Accepted</fullName>
+                    <default>false</default>
+                    <label>Insurance Not Accepted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ReferralSourceIds__c</fullName>
+        <externalId>false</externalId>
+        <label>Referral Source</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Referred_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Referred To</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Admissions (Outbound referring Contact)</relationshipLabel>
+        <relationshipName>Admissions2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Referrent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Referent</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Admissions (Inbound Referral Contact)</relationshipLabel>
+        <relationshipName>Admissions</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Referring_Organization__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Referring Organization</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Admissions (Inbound Refarral Account)</relationshipLabel>
+        <relationshipName>Admissions3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Related Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Admissions (Outbound Referring Account)</relationshipLabel>
+        <relationshipName>Admissions2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Relationship__c</fullName>
+        <externalId>false</externalId>
+        <label>Relationship</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Son</fullName>
+                    <default>false</default>
+                    <label>Son</label>
+                </value>
+                <value>
+                    <fullName>Daughter</fullName>
+                    <default>false</default>
+                    <label>Daughter</label>
+                </value>
+                <value>
+                    <fullName>Spouse</fullName>
+                    <default>false</default>
+                    <label>Spouse</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Residential__c</fullName>
+        <externalId>false</externalId>
+        <label>Residential</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Returning_to_our_care__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Returning to our care?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SSI__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Surgical Site Infection</inlineHelpText>
+        <label>SSI</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SSN__c</fullName>
+        <externalId>false</externalId>
+        <label>SSN</label>
+        <length>50</length>
+        <maskChar>asterisk</maskChar>
+        <maskType>lastFour</maskType>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>EncryptedText</type>
+    </fields>
+    <fields>
+        <fullName>Scholarship__c</fullName>
+        <externalId>false</externalId>
+        <label>Scholarship</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Emergency_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Emergency First Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Secondary_Emergency_Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Emergency Last Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Secondary_Emergency_Phone_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Emergency Phone Number</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Emergency_Relationship__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Emergency Relationship</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Child</fullName>
+                    <default>false</default>
+                    <label>Child</label>
+                </value>
+                <value>
+                    <fullName>Grandparent</fullName>
+                    <default>false</default>
+                    <label>Grandparent</label>
+                </value>
+                <value>
+                    <fullName>Guarantor</fullName>
+                    <default>false</default>
+                    <label>Guarantor</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Secondary_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Group #</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Secondary_Insurance_Provider__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Secondary Insurance Provider</label>
+        <referenceTo>Payor__c</referenceTo>
+        <relationshipLabel>Admissions (Secondary Insurance Provider)</relationshipLabel>
+        <relationshipName>Admissions1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Member_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Member ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Secondary_Referrent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Secondary Referent</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Admissions (Secondary Inbound Contact)</relationshipLabel>
+        <relationshipName>Admissions1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Secondry_Referent_Organisation__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Secondry Referent Organisation</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Admissions (Secondary Inbound Account)</relationshipLabel>
+        <relationshipName>Admissions4</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sober_Living__c</fullName>
+        <externalId>false</externalId>
+        <label>Sober Living</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Discharge Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>Completed Successfully</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>AMA</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>Therapeutic Discharge</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>Therapeutic Transfer</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>What_s_the_reimbursement_rate_the_policy__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What’s the reimbursement rate the policy pays at based on Medicare or usual and customary?</inlineHelpText>
+        <label>What’s the reimbursement rate the policy</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>Reason_for_Refer_Out_validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>And(ispickval(StageName,&apos;Refer Out&apos;),Or(isblank( Text(Reaon_for_Refer_Out__c )),isblank(Client_Last_Name__c)))</errorConditionFormula>
+        <errorDisplayField>Reaon_for_Refer_Out__c</errorDisplayField>
+        <errorMessage>Please fill &apos;Reason for Refer Out&apos; and &apos;Patient Last Name &apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Stage_Pending_Admission_checks</fullName>
+        <active>false</active>
+        <errorConditionFormula>IF(
+And(ischanged(StageName),ispickval(StageName,&apos;Pending Admission&apos;)),
+OR(isblank(Client_First_Name__c),isblank(Client_Last_Name__c),
+isblank(Client_DOB__c),isblank(Street__c),isblank(City__c),
+isblank(text(State1__c)),isblank(Zip__c),isblank(Primary_Phone__c),
+isblank(text(Identifier_Gender__c)),isblank(Subscriber_First_Name__c),
+isblank(Subscriber_Last_Name__c),isblank(Insurance_Provider__c),
+isblank(Medical_Insurance_Phone__c),isblank(Medical_Group__c),
+isblank(Medical_Member_ID__c),isblank(Referrent__c))
+
+
+,false)</errorConditionFormula>
+        <errorMessage>Please Fill: 
+Patient First Name ,Patient Last Name
+,Patient DOB   
+, Phone
+, Gender 
+, Street
+, State
+, City
+, Country
+, Insurance Provider
+, Member ID#
+, Group#
+, Subs First Name
+, Subs Last Name
+, Medical Phone
+, Referent</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>vob is complete and this is to inform admission team</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>VOB Complete Email</name>
+    <style>none</style>
+    <subject>VOB is Completed</subject>
+    <textOnly>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+        &lt;link href=&quot;https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&quot; rel=&quot;stylesheet&quot;&gt;  
+        &lt;style type=&quot;text/css&quot;&gt;
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: &apos;Roboto&apos;, sans-serif;
+            }
+           /* .gradient {
+                background: -moz-linear-gradient(180deg, #fff 0%, #69c1b6 100%);
+                background: -webkit-gradient(180deg, #fff 0%, #69c1b6 100%);
+                background: -webkit-linear-gradient(180deg, #fff 0%, #69c1b6 100%);
+                background: -o-linear-gradient(180deg, #fff 0%, #69c1b6 100%);
+                background: -ms-linear-gradient(180deg, #fff 0%, #69c1b6 100%);
+                background: linear-gradient(180deg, #fff 0%, #69c1b6 100%);
+            }*/
+            @media (max-width: 576px) {
+                .main-table {
+                    width: 100% !important;
+                    font-size: 12px;
+                }
+                .main-table img {
+                    width: 120px !important;
+                }
+                .main-table thead tr th {
+                    padding: 15px 0 0 !important;
+                }       
+            }  
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;table class=&quot;main-table&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; class=&quot;mobile-view&quot; style=&quot;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;  width: 550px; margin: 0 auto; font-family: &apos;Roboto&apos;, sans-serif; color:#000;&quot;&gt;
+            &lt;thead&gt;
+               &lt;tr&gt;
+                    &lt;td style=&quot;padding: 10px 5px;&quot;&gt;Hi Team,
+                        &lt;/td&gt;
+                &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;line-height:2&quot;&gt;&lt;a href=&quot;https://test.salesforce.com/{!VOB__c.Id}&quot; style=&quot;text-decoration: none; box-shadow: 0px 0px 4px 0px #ccc; color: #541414; border: 1px solid #ccc; border-radius:5px; padding: 5px; margin: 0px 10px 0 0;&quot;&gt;
+                        {!VOB__c.Name}&lt;/a&gt; has been completed.&lt;/td&gt;
+&lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                
+                   &lt;tr&gt;&lt;td style=&quot;border-bottom: 10px solid #0e426a;padding-top:40px&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;
+                 &lt;td style=&quot;padding: 10px 15px 5px; text-align: left; margin:0&quot;&gt;
+&lt;center&gt;&lt;img id=&quot;r8UvoN3JM_lvVM:&quot; src=&quot;https://infiniterecovery--partial--c.cs36.content.force.com/servlet/servlet.FileDownload?file=0152h000000DqXI&quot; alt=&quot;Image result for infinite recovery&quot; style=&quot;width: 225px; height: 225px; margin-left: 35px; margin-right: 35px; margin-top: -10px;&quot; data-atf=&quot;1&quot; alt=&quot;logo&quot;&gt;&lt;/center&gt;
+              
+                   &lt;/td&gt;
+                   &lt;/tr&gt;
+                   &lt;tr&gt;
+                   &lt;td style=&quot;text-align:center&quot;&gt;
+                        &lt;p style=&quot;margin:0&quot;&gt;Infinite Recovery Services&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;/tr&gt;
+    &lt;tr&gt;&lt;td style=&quot;text-align:center&quot;&gt;                    
+&lt;p style=&quot;margin:0&quot;&gt;Infinite Recovery - 6404 Ridge Oak Rd&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+
+ 
+
+&lt;tr&gt;&lt;td  style=&quot;text-align:center&quot;&gt;&lt;p style=&quot;margin:0&quot;&gt; Austin, Texas 78749&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:center&quot;&gt;
+&lt;p&gt;    &lt;a href=&quot;https://login.salesforce.com&quot;&gt;www.infiniterecovery.com&lt;/a&gt;&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot;font-size: 10px;&quot;&gt;This email and any files transmitted with it are confidential and are intended solely for the use of the individual or entity to which they are addressed. This communication may contain material protected by HIPAA legislation (45 CFR, Parts 160 &amp; 164). If you are not the intended recipient or the person responsible for delivering this email to the intended recipient, be advised that you have received this email in error and that any use, dissemination, forwarding, printing or copying of this email is strictly prohibited. If you have received this email in error, please notify the sender by replying to this email and then delete the email from your computer.
+    &lt;/p&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;&lt;td style=&quot;border-bottom: 10px solid #0e426a;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+                
+               
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<style type="text/css">
+body {
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+}
+/* .gradient {
+background: -moz-linear-gradient(180deg, #fff 0%, #69c1b6 100%);
+background: -webkit-gradient(180deg, #fff 0%, #69c1b6 100%);
+background: -webkit-linear-gradient(180deg, #fff 0%, #69c1b6 100%);
+background: -o-linear-gradient(180deg, #fff 0%, #69c1b6 100%);
+background: -ms-linear-gradient(180deg, #fff 0%, #69c1b6 100%);
+background: linear-gradient(180deg, #fff 0%, #69c1b6 100%);
+}*/
+@media (max-width: 576px) {
+.main-table {
+width: 100% !important;
+font-size: 12px;
+}
+.main-table img {
+width: 120px !important;
+}
+.main-table thead tr th {
+padding: 15px 0 0 !important;
+}
+}
+</style>
+</head>
+<body>
+<table class="main-table" border="0" cellspacing="0" cellpadding="0" class="mobile-view" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width: 550px; margin: 0 auto; font-family: 'Roboto', sans-serif; color:#000;">
+<thead>
+<tr>
+<td style="padding: 10px 5px;">Hi Team,
+</td>
+</tr>
+<tr>
+<td style="line-height:2"><a href="https://test.salesforce.com/{!PreAssesment__c.Id}" style="text-decoration: none; box-shadow: 0px 0px 4px 0px #ccc; color: #541414; border: 1px solid #ccc; border-radius:5px; padding: 5px; margin: 0px 10px 0 0;">
+{!PreAssesment__c.Name}</a> has been sent for approval.</td>
+</tr>
+</thead>
+<tbody>
+
+<tr><td style="border-bottom: 10px solid #0e426a;padding-top:40px"></td></tr>
+<tr>
+<td style="padding: 10px 15px 5px; text-align: left; margin:0">
+<center><img id="r8UvoN3JM_lvVM:" src=https://infiniterecovery--partial--c.cs36.content.force.com/servlet/servlet.ImageServer?id=0152h000000DqXI&oid=00D2h0000008iBw&lastMod=1575893114000" alt="Image result for infinite recovery" style="width: 225px; height: 225px; margin-left: 35px; margin-right: 35px; margin-top: -10px;" data-atf="1" alt="logo"></center>
+
+</td>
+</tr>
+<tr>
+<td style="text-align:center">
+<p style="margin:0">Infinite Recovery Services</p>
+</td>
+</tr>
+<tr><td style="text-align:center">
+<p style="margin:0">Infinite Recovery - 6404 Ridge Oak Rd</p></td></tr>
+
+
+
+<tr><td style="text-align:center"><p style="margin:0"> Austin, Texas 78749</p>
+</td>
+</tr>
+<tr><td style="text-align:center">
+<p> <a href="https://www.infiniterecovery.com/>www.infiniterecovery.com</a></p>
+</td></tr>
+<tr><td>
+<tr>
+<td>
+<p style="font-size: 10px;">This email and any files transmitted with it are confidential and are intended solely for the use of the individual or entity to which they are addressed. This communication may contain material protected by HIPAA legislation (45 CFR, Parts 160 & 164). If you are not the intended recipient or the person responsible for delivering this email to the intended recipient, be advised that you have received this email in error and that any use, dissemination, forwarding, printing or copying of this email is strictly prohibited. If you have received this email in error, please notify the sender by replying to this email and then delete the email from your computer.
+</p>
+</td>
+</tr>
+<tr><td style="border-bottom: 10px solid #0e426a;"></td></tr>
+
+
+</tbody>
+</table>
+</body>
+</html>

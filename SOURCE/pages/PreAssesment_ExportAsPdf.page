@@ -1,0 +1,380 @@
+<apex:page standardController="PreAssesment__c" applyHtmlTag="false"  showHeader="False"   renderAs="PDF" sidebar="False" extensions="PdfHelper">
+    
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"/>
+    <style>
+    table.main-table {
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; 
+        width:100%; margin: 0 auto; font-family: 'Roboto', sans-serif; font-size: 12px;
+}   
+
+table.detailList
+{
+ width:100% ;margin: 0 auto; font-family: 'Roboto', sans-serif;
+}
+.detailList  tr td
+{
+text-align:left;padding:5px 10px;font-size:12px;width:25%;
+}
+
+.detailList  tr th
+{
+text-align:right;padding:5px 10px;font-size:12px;width:25%
+}
+</style>
+</head>
+<body>
+<table class="main-table" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="padding-top: 10px;
+    padding-bottom: 5px"><apex:image id="theImage" value="{!$Resource.InfiniteLogo}" width="180" alt="Infinite Recovery"/></td>
+   
+<td></td>
+<td></td>   
+    
+    
+<td></td>
+<td></td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td colspan="6" style="padding-top: 10px;
+    padding-bottom: 5px"><h2>Pre-Assessment</h2></td>
+</tr>
+<tr >
+<td colspan="6" style="border-bottom: 2px solid black"></td>
+</tr>
+</table> 
+
+<table class="detailList" border="0" cellpadding="0" cellspacing="0">
+<!--
+<tr>
+
+<th>Pre-Assessment Name</th>
+<td> <apex:outputField value="{!PreAssesment__c.Name}"/> </td>
+<th>Patient Name</th>
+<td> <apex:outputField value="{!PreAssesment__c.Patient_Name__c}"/></td>
+
+</tr>
+-->
+
+
+
+<!-- Demographic section open-->
+   
+<tr>
+    <th colspan="6" style="text-align:left;background-color:#eeeeee;"><h2 style="margin:0;font-size:17px">Information</h2>
+</th></tr>
+
+<tr style="margin: 5px">
+<th>Patient Name</th>
+<td> <apex:outputField value="{!PreAssesment__c.Patient_Name__c}"/></td>
+<th>Stage</th>
+    <td> <apex:outputField value="{!PreAssesment__c.Stage__c}"/></td>
+</tr>
+<tr>
+<th>Pre-Assesment Approver</th>
+    <td> <apex:outputField value="{!PreAssesment__c.User_To_Approve_Assesment__c}"/></td>
+</tr>
+
+
+    
+<!-- Demographic section ends-->
+<!--Medical Pre-Screen starts-->
+
+<tr>
+    <th colspan="6" style="text-align:left;background-color:#eeeeee;"><h2 style="margin:0;font-size:17px"> Medical Pre-Screen Info</h2>
+   </th>
+</tr>
+
+<tr>
+
+<th> Substance Used </th>
+<td> <apex:outputField value="{!PreAssesment__c.Substances_Used__c}"/></td>
+<th>Substance Used Details</th>
+<td><apex:outputField value="{!PreAssesment__c.Substances_Use_History__c}"/> </td>
+
+</tr>
+
+<tr>
+
+<th>Co-Occuring Disorders </th>
+<td><apex:outputField value="{!PreAssesment__c.Co_Ocurring_Disorders__c}"/> </td>
+<th>Date of Mental Health Diagnosis</th>
+<td><apex:outputField value="{!PreAssesment__c.Date_of_Mental_Health_Diagnosis__c}"/></td>
+</tr>
+
+
+<tr>
+
+<th>Current on Medication?</th>
+<td> <apex:outputField value="{!PreAssesment__c.Current_on_Medication__c}"/></td>
+<th>Is Medication Effective?</th>
+<td ><apex:outputField value="{!PreAssesment__c.Is_Medication_Effective__c}"/></td>
+
+</tr>
+<tr>
+
+<th>Suicide Attempt Details</th>
+<td> <apex:outputField value="{!PreAssesment__c.Sucide_Attempt_Details__c}"/></td>
+<th>Current Mood</th>
+<td><apex:outputField value="{!PreAssesment__c.Current_Mood__c}"/></td>
+
+</tr>
+    
+<tr>
+
+<th>Self-Harm History</th>
+<td> <apex:outputField value="{!PreAssesment__c.Self_Harm_History__c}"/></td>
+<th>Self-Harm Details</th>
+<td><apex:outputField value="{!PreAssesment__c.Self_Harm_Details__c}"/></td>
+
+</tr>    
+<tr>
+
+<th>Date of Sucide Attempt</th>
+<td> <apex:outputField value="{!PreAssesment__c.Date_of_Sucide_Attempt__c}"/></td>
+<th>Date of Self-Harm</th>
+<td><apex:outputField value="{!PreAssesment__c.Date_of_Self_Harm__c}"/></td>
+
+</tr>   
+<tr>
+
+<th>Medical Diagnosis</th>
+<td> <apex:outputField value="{!PreAssesment__c.Medical_Diagnosis__c}"/></td>
+<th>Taking Any Medications?</th>
+<td><apex:outputField value="{!PreAssesment__c.Taking_Any_Medications__c}"/></td>
+
+</tr>   
+<tr>
+
+<th>Medical Diagnosis</th>
+<td> <apex:outputField value="{!PreAssesment__c.Medical_Diagnosis__c}"/></td>
+<th>Taking Any Medications?</th>
+<td><apex:outputField value="{!PreAssesment__c.Taking_Any_Medications__c}"/></td>
+
+</tr>   
+ <tr>
+
+<th>Anyone use Alcohol/ Drugs In Their Home?</th>
+<td> <apex:outputField value="{!PreAssesment__c.Anyone_use_Alcohol_Drugs_In_Their_Home__c}"/></td>
+<th>Taking Them Regularly?</th>
+<td><apex:outputField value="{!PreAssesment__c.Taking_Them_Regularly__c}"/></td>
+
+</tr>  
+<tr>
+
+<th>Seizure/ DT History</th>
+<td> <apex:outputField value="{!PreAssesment__c.Seizure_DT_History__c}"/></td>
+<th>Any Previous Treatment?</th>
+<td><apex:outputField value="{!PreAssesment__c.Any_Previous_Treatment__c}"/></td>
+
+</tr>  
+<tr>
+
+<th>Seizure/DT Description</th>
+<td> <apex:outputField value="{!PreAssesment__c.Seizure_DT_Description__c}"/></td>
+<th>Any Legal History/ Consequences</th>
+<td><apex:outputField value="{!PreAssesment__c.Any_Legal_History_Consequences__c}"/></td>
+
+</tr>  
+    
+    
+ <!--medical pre- screen ends-->   
+<tr>
+<th colspan="6" style="text-align:left;background-color:#eeeeee;padding:5px"><h2 style="margin:0;font-size:17px"> Mobility Details </h2>
+</th></tr>
+<tr>
+<!--<td style="width:100px"></td>-->
+<th>Mobility issues?</th>
+<td> <apex:outputField value="{!PreAssesment__c.Are_you_able_to_walk_without_help__c}"/></td>
+<th> If Yes, Please Explain</th>
+<td><apex:outputField value="{!PreAssesment__c.If_Yes_Please_Explain_Walk_without_assis__c}"/></td>
+<!--<td style="width:100px"></td>-->
+</tr>
+<tr>
+<!--<td style="width:100px"></td>-->
+<th>Difficulty up or down?</th>
+<td> <apex:outputField value="{!PreAssesment__c.Are_you_able_to_go_up_and_down_stairs__c}"/></td>
+<th> If Yes, Please Explain</th>
+<td><apex:outputField value="{!PreAssesment__c.If_Yes_Please_Explain_walk_up_and_down__c}"/></td>
+<!--<td style="width:100px"></td>-->
+    </tr>  
+    <tr>
+    <th>Broken bones or Sprains?</th>
+<td><apex:outputField value="{!PreAssesment__c.Do_yo_have_any_broken_bones_or_sprains__c}"/></td>
+    <th> If Yes, Please Explain</th>
+<td><apex:outputField value="{!PreAssesment__c.If_Yes_Please_Explain_broken_bones__c}"/></td>
+    </tr>
+    <tr>
+    <th>Difficulty in and out of shower?</th>
+<td><apex:outputField value="{!PreAssesment__c.Are_you_able_to_take_shower__c}"/></td>
+    <th> If Yes, Please Explain</th>
+<td><apex:outputField value="{!PreAssesment__c.If_Yes_Please_Explain_get_in_and_out__c}"/></td>
+</tr>
+    
+    
+ <tr>
+    <th colspan="6" style="text-align:left;padding:5px;padding-bottom:5px;padding-top:150px"><h2 style="margin:0;font-size:17px">Substance Abuse History</h2>
+</th></tr>
+            
+   
+            <apex:repeat value="{!meth1}" var="met" >
+            <td style="text-align:left;font-size:12px;padding-top:0px"><h3 style="margin:0;">
+                        
+                         <apex:outputField value="{!met.Name}"/></h3> </td>
+   
+                
+    
+                         <tr >
+<td colspan="6" style="border-bottom: 2px solid black"></td>
+</tr>
+    
+  
+        
+                <tr>
+<th style="text-align:right;padding:5px 10px;font-size:12px">Substance Abuse History Name   </th>
+
+                    <td style="text-align:left;padding:5px 10px;font-size:12px"> <apex:outputField value="{!met.Name}"/> </td>
+                 <th>Owner  </th>
+                   
+                    <td  colspan="3"> <apex:outputField value="{!met.OwnerId}"/> </td>
+        </tr>
+                    <tr>
+                     <th style="text-align:right;padding:5px 10px;font-size:12px">Drug</th>
+                    <td> <apex:outputField value="{!met.Drug__c}"/> </td>
+                    
+                         <th>Method</th>
+                    <td> <apex:outputField value="{!met.Method__c}"/> </td>
+                    </tr>
+               
+                <tr>
+                     <th style="text-align:right;padding:5px 10px;font-size:12px">Last Use</th>
+                    <td> <apex:outputField value="{!met.Last_Use__c}"/> </td>
+                  
+                    <th>Daily Amount</th>
+                    <td > <apex:outputField value="{!met.Daily_Amount__c}"/> </td>
+                    </tr>
+                
+                <tr>
+                     <th style="text-align:right;padding:5px 10px;font-size:12px">Age of first use</th>
+                    <td> <apex:outputField value="{!met.Age_of_first_use__c}"/> </td>
+                    
+                     <th style="text-align:right;padding:5px 10px;font-size:12px">Frequency</th>
+                    <td> <apex:outputField value="{!met.Frequency__c}"/> </td>
+                    
+                    </tr>
+                    <tr>
+                   
+                     
+                    
+                     <th style="padding-bottom:25px;padding-top:5px">Created By</th>
+                    <td style="padding-bottom:25px;padding-top:5px"> <apex:outputField value="{!met.CreatedById}"/> </td>
+                      <th style="padding-bottom:25px;padding-top:5px">Last Modified By</th>
+                    <td style="padding-bottom:25px;padding-top:5px"> <apex:outputField value="{!met.LastModifiedById}"/> </td>
+                    </tr>
+            
+        
+</apex:repeat>
+        
+    <tr>
+    <th colspan="6" style="text-align:left;padding:5px;padding-bottom:5px"><h2 style="margin:0;font-size:17px">Medication History</h2>
+</th></tr>
+   
+     
+    
+         
+            <apex:repeat value="{!meth2}" var="met" >
+                  <td  colspan="3" style="padding-top:0px"><h3 style="margin:0">
+                        
+                         <apex:outputField value="{!met.Name}"/> </h3></td>
+        
+                <tr>    
+<td colspan="6" style="border-bottom: 2px solid black"></td>
+</tr>
+
+                <tr>
+                     <th>Pre-Assessment</th>
+                    <td   colspan="3"> <apex:outputField value="{!met.Pre_Assessment__c}"/> </td>
+            </tr>
+                 
+                 <tr>
+                     <th>Date of Last Use</th>
+                      <td> <apex:outputField value="{!met.Date_of_Last_Use__c}"/> </td>
+                      <th>Dosage</th>
+                      <td> <apex:outputField value="{!met.Dosage__c}"/> </td>
+                  </tr> 
+            <tr>
+                     <th>Length of Prescription</th>
+                      <td> <apex:outputField value="{!met.Length_of_Prescription__c}"/> </td>
+                      <th>Name of the Medication</th>
+                      <td> <apex:outputField value="{!met.Name_of_the_Medication__c}"/> </td>
+                  </tr> 
+            <tr>
+                     <th>Frequency</th>
+                      <td> <apex:outputField value="{!met.Frequency__c}"/> </td>
+                      <th>Current Compliance</th>
+                      <td> <apex:outputField value="{!met.Current_Compliance__c}"/> </td>
+                  </tr> 
+                <tr>
+                     <th style="padding-bottom:25px;padding-top:5px">  Created By</th>
+                      <td style="padding-bottom:25px;padding-top:5px"> <apex:outputField value="{!met.CreatedById}"/> </td>
+                      <th style="padding-bottom:25px;padding-top:5px">Last Modified By</th>
+                      <td  style="padding-bottom:25px;padding-top:5px"> <apex:outputField value="{!met.LastModifiedById}"/> </td>
+                  </tr> 
+                
+                </apex:repeat>
+        
+    <tr>
+    <th colspan="6" style="text-align:left;padding:5px;padding-bottom:5px"><h2 style="margin:0;font-size:17px">Treatment History</h2>
+</th></tr>
+
+    
+            <apex:repeat value="{!meth3}" var="met" >
+                
+                 <td  colspan="3" style="padding-top:5px"><h3 style="margin:0">
+                        
+                         <apex:outputField value="{!met.Name}"/></h3> </td> 
+                <tr>
+               <td colspan="6" style="border-bottom: 2px solid black"></td>
+                </tr>
+                    
+
+                
+                 <tr>
+                    <th>Facility</th>
+                   
+                    <td> <apex:outputField value="{!met.Facility__c}"/> </td>
+                    <th>Length of Stay</th>
+                   
+                    <td> <apex:outputField value="{!met.Length_of_Stay__c}"/> </td>
+                </tr>
+                <tr>
+                    <th>Level of care</th>
+                   
+                    <td> <apex:outputField value="{!met.Level_Of_Care__c}"/> </td>
+                    <th>Length of Soberity Achieved</th>   
+                    <td> <apex:outputField value="{!met.Length_of_Sobriety_Achieved__c}"/> </td>
+                </tr>
+                 <tr>
+                    <th>Type of Discharge</th>
+                   
+                    <td> <apex:outputField value="{!met.Type_of_Discharge__c}"/> </td>
+                    <th>Date of Episode</th>   
+                    <td> <apex:outputField value="{!met.Date_of_Episode__c}"/> </td>
+                </tr>
+                  <tr>
+                     <th style="padding-bottom:25px;padding-top:5px">Created By</th>
+                    <td style="padding-bottom:25px;padding-top:5px"> <apex:outputField value="{!met.CreatedById}"/> </td>
+                      <th style="padding-bottom:25px;padding-top:5px">Last Modified By</th>
+                    <td style="padding-bottom:25px;padding-top:5px"> <apex:outputField value="{!met.LastModifiedById}"/> </td>
+                 </tr>
+            
+    </apex:repeat>
+        
+</table>
+</body>
+
+
+
+</apex:page>
