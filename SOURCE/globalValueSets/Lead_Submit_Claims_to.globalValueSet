@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1199 NATIONAL BENEFIT FUND</fullName>
+        <default>false</default>
+        <label>1199 NATIONAL BENEFIT FUND</label>
+    </customValue>
+    <customValue>
+        <fullName>AETNA US HEALTHCARE</fullName>
+        <default>false</default>
+        <label>AETNA US HEALTHCARE</label>
+    </customValue>
+    <customValue>
+        <fullName>ALICARE - HWY CONSTRUCTION</fullName>
+        <default>false</default>
+        <label>ALICARE - HWY CONSTRUCTION</label>
+    </customValue>
+    <customValue>
+        <fullName>ALICARE AMALGAMATED LIFE</fullName>
+        <default>false</default>
+        <label>ALICARE AMALGAMATED LIFE</label>
+    </customValue>
+    <customValue>
+        <fullName>ALICARE AMALGAMATED LIFE- ALLIED TRADES</fullName>
+        <default>false</default>
+        <label>ALICARE AMALGAMATED LIFE- ALLIED TRADES</label>
+    </customValue>
+    <customValue>
+        <fullName>ALLEGIANCE BENEFIT PLAN MANAGEMENT INC.</fullName>
+        <default>false</default>
+        <label>ALLEGIANCE BENEFIT PLAN MANAGEMENT INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>ALLIED TRADES - ALLIED AGREEMENT</fullName>
+        <default>false</default>
+        <label>ALLIED TRADES - ALLIED AGREEMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>ALLIED TRADES ASSISTANCE PROGRAM</fullName>
+        <default>false</default>
+        <label>ALLIED TRADES ASSISTANCE PROGRAM</label>
+    </customValue>
+    <customValue>
+        <fullName>AMALGAMATED LIFE - PAALICARE</fullName>
+        <default>false</default>
+        <label>AMALGAMATED LIFE - PAALICARE</label>
+    </customValue>
+    <customValue>
+        <fullName>AMBETTER AR</fullName>
+        <default>false</default>
+        <label>AMBETTER AR</label>
+    </customValue>
+    <customValue>
+        <fullName>AMBETTER OF ARKANSAS</fullName>
+        <default>false</default>
+        <label>AMBETTER OF ARKANSAS</label>
+    </customValue>
+    <customValue>
+        <fullName>AMERICAN BEHAVIOR</fullName>
+        <default>false</default>
+        <label>AMERICAN BEHAVIOR</label>
+    </customValue>
+    <customValue>
+        <fullName>AMERIHEALTH ADMINISTRATORS INC.</fullName>
+        <default>false</default>
+        <label>AMERIHEALTH ADMINISTRATORS INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>AMERIHEALTH -IAA</fullName>
+        <default>false</default>
+        <label>AMERIHEALTH -IAA</label>
+    </customValue>
+    <customValue>
+        <fullName>AMERIHEALTH NEW JERSEYDELAWARE - HMO</fullName>
+        <default>false</default>
+        <label>AMERIHEALTH NEW JERSEYDELAWARE - HMO</label>
+    </customValue>
+    <customValue>
+        <fullName>ANTHEM BLUE CROSS CALIFORNIA</fullName>
+        <default>false</default>
+        <label>ANTHEM BLUE CROSS CALIFORNIA</label>
+    </customValue>
+    <customValue>
+        <fullName>ANTHEM FEDERAL BLUE CROSS - FED EMPLOYEE</fullName>
+        <default>false</default>
+        <label>ANTHEM FEDERAL BLUE CROSS - FED EMPLOYEE</label>
+    </customValue>
+    <customValue>
+        <fullName>ASSOCIATES FOR HEALTH CARE PPO ONLY</fullName>
+        <default>false</default>
+        <label>ASSOCIATES FOR HEALTH CARE PPO ONLY</label>
+    </customValue>
+    <customValue>
+        <fullName>AULT CARE</fullName>
+        <default>false</default>
+        <label>AULT CARE</label>
+    </customValue>
+    <customValue>
+        <fullName>AUTOMATED BENEFIT SERVICES</fullName>
+        <default>false</default>
+        <label>AUTOMATED BENEFIT SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>AVMED INC</fullName>
+        <default>false</default>
+        <label>AVMED INC</label>
+    </customValue>
+    <customValue>
+        <fullName>BEACON HEALTH OPTIONS</fullName>
+        <default>false</default>
+        <label>BEACON HEALTH OPTIONS</label>
+    </customValue>
+    <customValue>
+        <fullName>BEACON HEALTH OPTIONS - COLORADO HEALTH NETWORKS</fullName>
+        <default>false</default>
+        <label>BEACON HEALTH OPTIONS - COLORADO HEALTH NETWORKS</label>
+    </customValue>
+    <customValue>
+        <fullName>BEACON HEALTH OPTIONS - FHC AFFILIATES</fullName>
+        <default>false</default>
+        <label>BEACON HEALTH OPTIONS - FHC AFFILIATES</label>
+    </customValue>
+    <customValue>
+        <fullName>BEACON HEALTH OPTIONS MHSA</fullName>
+        <default>false</default>
+        <label>BEACON HEALTH OPTIONS MHSA</label>
+    </customValue>
+    <customValue>
+        <fullName>BEACON HEALTH STRATEGIES</fullName>
+        <default>false</default>
+        <label>BEACON HEALTH STRATEGIES</label>
+    </customValue>
+    <customValue>
+        <fullName>BEACON HEALTH STRATEGIES- -TUFTS</fullName>
+        <default>false</default>
+        <label>BEACON HEALTH STRATEGIES- -TUFTS</label>
+    </customValue>
+    <customValue>
+        <fullName>BEACON HEALTH STRATEGIES UNICARE</fullName>
+        <default>false</default>
+        <label>BEACON HEALTH STRATEGIES UNICARE</label>
+    </customValue>
+    <customValue>
+        <fullName>BLUE CROSS AND BLUE SHIELD OF FLORIDA</fullName>
+        <default>false</default>
+        <label>BLUE CROSS AND BLUE SHIELD OF FLORIDA</label>
+    </customValue>
+    <customValue>
+        <fullName>BLUE CROSS OF NATIONAL CAPITAL AREA - CAREFIRST</fullName>
+        <default>false</default>
+        <label>BLUE CROSS OF NATIONAL CAPITAL AREA - CAREFIRST</label>
+    </customValue>
+    <customValue>
+        <fullName>BLUE SHIELD OF NATIONAL CAPITOL AREA - CAREFIRST</fullName>
+        <default>false</default>
+        <label>BLUE SHIELD OF NATIONAL CAPITOL AREA - CAREFIRST</label>
+    </customValue>
+    <customValue>
+        <fullName>CALIFORNIA BLUE SHIELD</fullName>
+        <default>false</default>
+        <label>CALIFORNIA BLUE SHIELD</label>
+    </customValue>
+    <customValue>
+        <fullName>CALIFORNIA FEDERAL BCBS</fullName>
+        <default>false</default>
+        <label>CALIFORNIA FEDERAL BCBS</label>
+    </customValue>
+    <customValue>
+        <fullName>CAPITAL BLUE CROSS OF PENNSYLVANIA</fullName>
+        <default>false</default>
+        <label>CAPITAL BLUE CROSS OF PENNSYLVANIA</label>
+    </customValue>
+    <customValue>
+        <fullName>CAPITAL DISTRICT PHYSICIANS HEALTH PLAN-CDPHP</fullName>
+        <default>false</default>
+        <label>CAPITAL DISTRICT PHYSICIANS HEALTH PLAN-CDPHP</label>
+    </customValue>
+    <customValue>
+        <fullName>CIGNA BEHAVIORAL</fullName>
+        <default>false</default>
+        <label>CIGNA BEHAVIORAL</label>
+    </customValue>
+    <customValue>
+        <fullName>CIGNA HEALTH PLAN</fullName>
+        <default>false</default>
+        <label>CIGNA HEALTH PLAN</label>
+    </customValue>
+    <customValue>
+        <fullName>CIGNA HEALTH PLAN - WEST FEDERATED</fullName>
+        <default>false</default>
+        <label>CIGNA HEALTH PLAN - WEST FEDERATED</label>
+    </customValue>
+    <customValue>
+        <fullName>CIGNA HEALTH PLAN- STERLING</fullName>
+        <default>false</default>
+        <label>CIGNA HEALTH PLAN- STERLING</label>
+    </customValue>
+    <customValue>
+        <fullName>CIGNA HEALTH PLANS- HERITAGE</fullName>
+        <default>false</default>
+        <label>CIGNA HEALTH PLANS- HERITAGE</label>
+    </customValue>
+    <customValue>
+        <fullName>COMPSYCH</fullName>
+        <default>false</default>
+        <label>COMPSYCH</label>
+    </customValue>
+    <customValue>
+        <fullName>CONNECTICARE</fullName>
+        <default>false</default>
+        <label>CONNECTICARE</label>
+    </customValue>
+    <customValue>
+        <fullName>CONSOCIATE GROUP</fullName>
+        <default>false</default>
+        <label>CONSOCIATE GROUP</label>
+    </customValue>
+    <customValue>
+        <fullName>CONSOLIDATED HEALTH PLANS</fullName>
+        <default>false</default>
+        <label>CONSOLIDATED HEALTH PLANS</label>
+    </customValue>
+    <customValue>
+        <fullName>COVENTRY HEALTH CARE</fullName>
+        <default>false</default>
+        <label>COVENTRY HEALTH CARE</label>
+    </customValue>
+    <customValue>
+        <fullName>DISTRICT COUNSEL 21 HEALTH AND WELLFARE</fullName>
+        <default>false</default>
+        <label>DISTRICT COUNSEL 21 HEALTH AND WELLFARE</label>
+    </customValue>
+    <customValue>
+        <fullName>FLORIDA MEDICARE</fullName>
+        <default>false</default>
+        <label>FLORIDA MEDICARE</label>
+    </customValue>
+    <customValue>
+        <fullName>FRONTPATH HEALTH COALITION</fullName>
+        <default>false</default>
+        <label>FRONTPATH HEALTH COALITION</label>
+    </customValue>
+    <customValue>
+        <fullName>GEHA</fullName>
+        <default>false</default>
+        <label>GEHA</label>
+    </customValue>
+    <customValue>
+        <fullName>GHI NEW YORK GROUP HEALTH</fullName>
+        <default>false</default>
+        <label>GHI NEW YORK GROUP HEALTH</label>
+    </customValue>
+    <customValue>
+        <fullName>GOLDEN RULE</fullName>
+        <default>false</default>
+        <label>GOLDEN RULE</label>
+    </customValue>
+    <customValue>
+        <fullName>GOVERNMENT EMPLOYEE HOSPITAL ASSOC GEHA</fullName>
+        <default>false</default>
+        <label>GOVERNMENT EMPLOYEE HOSPITAL ASSOC GEHA</label>
+    </customValue>
+    <customValue>
+        <fullName>GREATWESTHEALTHCARE-CIGNA</fullName>
+        <default>false</default>
+        <label>GREATWESTHEALTHCARE-CIGNA</label>
+    </customValue>
+    <customValue>
+        <fullName>HARVARD PILGRIM HEALTH CARE</fullName>
+        <default>false</default>
+        <label>HARVARD PILGRIM HEALTH CARE</label>
+    </customValue>
+    <customValue>
+        <fullName>HEALTH ALLIANCE PLAN</fullName>
+        <default>false</default>
+        <label>HEALTH ALLIANCE PLAN</label>
+    </customValue>
+    <customValue>
+        <fullName>HEALTHCOMP INC.</fullName>
+        <default>false</default>
+        <label>HEALTHCOMP INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>HEALTHLINK PPO</fullName>
+        <default>false</default>
+        <label>HEALTHLINK PPO</label>
+    </customValue>
+    <customValue>
+        <fullName>HUMANA</fullName>
+        <default>false</default>
+        <label>HUMANA</label>
+    </customValue>
+    <customValue>
+        <fullName>INDEPENDENT HEALTH</fullName>
+        <default>false</default>
+        <label>INDEPENDENT HEALTH</label>
+    </customValue>
+    <customValue>
+        <fullName>INDEPENDENT HLTH ASSOC IHA - WESTERN</fullName>
+        <default>false</default>
+        <label>INDEPENDENT HLTH ASSOC IHA - WESTERN</label>
+    </customValue>
+    <customValue>
+        <fullName>INETICO - SEMINOLE TRIBE</fullName>
+        <default>false</default>
+        <label>INETICO - SEMINOLE TRIBE</label>
+    </customValue>
+    <customValue>
+        <fullName>INETICO INC.</fullName>
+        <default>false</default>
+        <label>INETICO INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>INTEGRATED BEHAVIORAL HEALTH</fullName>
+        <default>false</default>
+        <label>INTEGRATED BEHAVIORAL HEALTH</label>
+    </customValue>
+    <customValue>
+        <fullName>INTERVENTION STRATEGIES</fullName>
+        <default>false</default>
+        <label>INTERVENTION STRATEGIES</label>
+    </customValue>
+    <customValue>
+        <fullName>IRON WORKERS DISTRICT COUNCIL</fullName>
+        <default>false</default>
+        <label>IRON WORKERS DISTRICT COUNCIL</label>
+    </customValue>
+    <customValue>
+        <fullName>IRON WORKERS DISTRICT COUNCIL-ALLIED</fullName>
+        <default>false</default>
+        <label>IRON WORKERS DISTRICT COUNCIL-ALLIED</label>
+    </customValue>
+    <customValue>
+        <fullName>KHPE</fullName>
+        <default>false</default>
+        <label>KHPE</label>
+    </customValue>
+    <customValue>
+        <fullName>LOCAL 472</fullName>
+        <default>false</default>
+        <label>LOCAL 472</label>
+    </customValue>
+    <customValue>
+        <fullName>LOWER HUDSON VALLEY EAP</fullName>
+        <default>false</default>
+        <label>LOWER HUDSON VALLEY EAP</label>
+    </customValue>
+    <customValue>
+        <fullName>MAGELLAN BEHAVIORAL HEALTH</fullName>
+        <default>false</default>
+        <label>MAGELLAN BEHAVIORAL HEALTH</label>
+    </customValue>
+    <customValue>
+        <fullName>MAGELLAN BEHAVIORAL HEALTH-</fullName>
+        <default>false</default>
+        <label>MAGELLAN BEHAVIORAL HEALTH-</label>
+    </customValue>
+    <customValue>
+        <fullName>MAGELLAN HEALTH SERVICES - HEALTHFIRST</fullName>
+        <default>false</default>
+        <label>MAGELLAN HEALTH SERVICES - HEALTHFIRST</label>
+    </customValue>
+    <customValue>
+        <fullName>MAGNACARE</fullName>
+        <default>false</default>
+        <label>MAGNACARE</label>
+    </customValue>
+    <customValue>
+        <fullName>MANAGED HEALTH NETWORK</fullName>
+        <default>false</default>
+        <label>MANAGED HEALTH NETWORK</label>
+    </customValue>
+    <customValue>
+        <fullName>MEDCOST BENEFIT SERVICES MBS</fullName>
+        <default>false</default>
+        <label>MEDCOST BENEFIT SERVICES MBS</label>
+    </customValue>
+    <customValue>
+        <fullName>MEDICA2</fullName>
+        <default>false</default>
+        <label>MEDICA2</label>
+    </customValue>
+    <customValue>
+        <fullName>MEDICAL MUTUAL OF OHIO</fullName>
+        <default>false</default>
+        <label>MEDICAL MUTUAL OF OHIO</label>
+    </customValue>
+    <customValue>
+        <fullName>MENTAL HEALTH NETWORK - MHNET</fullName>
+        <default>false</default>
+        <label>MENTAL HEALTH NETWORK - MHNET</label>
+    </customValue>
+    <customValue>
+        <fullName>MERITAIN HEALTH MINNEAPOLIS</fullName>
+        <default>false</default>
+        <label>MERITAIN HEALTH MINNEAPOLIS</label>
+    </customValue>
+    <customValue>
+        <fullName>MHC - INDEPENDENCE BLUE CROSS</fullName>
+        <default>false</default>
+        <label>MHC - INDEPENDENCE BLUE CROSS</label>
+    </customValue>
+    <customValue>
+        <fullName>NATIONAL ELEVATOR INDUSTRY</fullName>
+        <default>false</default>
+        <label>NATIONAL ELEVATOR INDUSTRY</label>
+    </customValue>
+    <customValue>
+        <fullName>NEIGHBORHOOD HEALTH PARTNERSHIP OF FL</fullName>
+        <default>false</default>
+        <label>NEIGHBORHOOD HEALTH PARTNERSHIP OF FL</label>
+    </customValue>
+    <customValue>
+        <fullName>NIPPON LIFE INSURANCE</fullName>
+        <default>false</default>
+        <label>NIPPON LIFE INSURANCE</label>
+    </customValue>
+    <customValue>
+        <fullName>OASIS BEHAVIORAL HEALTHCARE</fullName>
+        <default>false</default>
+        <label>OASIS BEHAVIORAL HEALTHCARE</label>
+    </customValue>
+    <customValue>
+        <fullName>OPERATING ENGINEERS LOCAL #25</fullName>
+        <default>false</default>
+        <label>OPERATING ENGINEERS LOCAL #25</label>
+    </customValue>
+    <customValue>
+        <fullName>OPTUM</fullName>
+        <default>false</default>
+        <label>OPTUM</label>
+    </customValue>
+    <customValue>
+        <fullName>OXFORD HEALTH PLANS</fullName>
+        <default>false</default>
+        <label>OXFORD HEALTH PLANS</label>
+    </customValue>
+    <customValue>
+        <fullName>PACIFICSOURCE HEALTH PLANS</fullName>
+        <default>false</default>
+        <label>PACIFICSOURCE HEALTH PLANS</label>
+    </customValue>
+    <customValue>
+        <fullName>PAINTERS BENEFIT OFFICE</fullName>
+        <default>false</default>
+        <label>PAINTERS BENEFIT OFFICE</label>
+    </customValue>
+    <customValue>
+        <fullName>PENNSYLVANIA INDEPENDENCE BLUE CROSS</fullName>
+        <default>false</default>
+        <label>PENNSYLVANIA INDEPENDENCE BLUE CROSS</label>
+    </customValue>
+    <customValue>
+        <fullName>POMCO</fullName>
+        <default>false</default>
+        <label>POMCO</label>
+    </customValue>
+    <customValue>
+        <fullName>POPULYTICS</fullName>
+        <default>false</default>
+        <label>POPULYTICS</label>
+    </customValue>
+    <customValue>
+        <fullName>PROFESSIONAL BENEFIT ADMINISTRATORS</fullName>
+        <default>false</default>
+        <label>PROFESSIONAL BENEFIT ADMINISTRATORS</label>
+    </customValue>
+    <customValue>
+        <fullName>PROVIDENCE</fullName>
+        <default>false</default>
+        <label>PROVIDENCE</label>
+    </customValue>
+    <customValue>
+        <fullName>QUALCARE DBA QANI ADMINISTRATORS</fullName>
+        <default>false</default>
+        <label>QUALCARE DBA QANI ADMINISTRATORS</label>
+    </customValue>
+    <customValue>
+        <fullName>QUALCARE INC</fullName>
+        <default>false</default>
+        <label>QUALCARE INC</label>
+    </customValue>
+    <customValue>
+        <fullName>QUALCHOICE OF ARKANSAS</fullName>
+        <default>false</default>
+        <label>QUALCHOICE OF ARKANSAS</label>
+    </customValue>
+    <customValue>
+        <fullName>QUEST BEHAVIORAL HELATH</fullName>
+        <default>false</default>
+        <label>QUEST BEHAVIORAL HELATH</label>
+    </customValue>
+    <customValue>
+        <fullName>SELECTCARE</fullName>
+        <default>false</default>
+        <label>SELECTCARE</label>
+    </customValue>
+    <customValue>
+        <fullName>SELECTCARE - PIPE TRADE SERVICES</fullName>
+        <default>false</default>
+        <label>SELECTCARE - PIPE TRADE SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>SOUTH CENTRAL UFCW</fullName>
+        <default>false</default>
+        <label>SOUTH CENTRAL UFCW</label>
+    </customValue>
+    <customValue>
+        <fullName>THE BOON GROUP</fullName>
+        <default>false</default>
+        <label>THE BOON GROUP</label>
+    </customValue>
+    <customValue>
+        <fullName>THREE RIVERS PREFERRED</fullName>
+        <default>false</default>
+        <label>THREE RIVERS PREFERRED</label>
+    </customValue>
+    <customValue>
+        <fullName>TUFTS ASSOCIATED HEALTH PLANS</fullName>
+        <default>false</default>
+        <label>TUFTS ASSOCIATED HEALTH PLANS</label>
+    </customValue>
+    <customValue>
+        <fullName>UMR FKA UMR WAUSAU</fullName>
+        <default>false</default>
+        <label>UMR FKA UMR WAUSAU</label>
+    </customValue>
+    <customValue>
+        <fullName>UNI BEHAVIORAL HEALTH</fullName>
+        <default>false</default>
+        <label>UNI BEHAVIORAL HEALTH</label>
+    </customValue>
+    <customValue>
+        <fullName>UNITED BEHAVIORAL HEALTH</fullName>
+        <default>false</default>
+        <label>UNITED BEHAVIORAL HEALTH</label>
+    </customValue>
+    <customValue>
+        <fullName>UNITED BEHAVIORAL HEALTHCARE</fullName>
+        <default>false</default>
+        <label>UNITED BEHAVIORAL HEALTHCARE</label>
+    </customValue>
+    <customValue>
+        <fullName>UNITED HEALTH SHARED SERVICES</fullName>
+        <default>false</default>
+        <label>UNITED HEALTH SHARED SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>UNITED HEALTHCARE</fullName>
+        <default>false</default>
+        <label>UNITED HEALTHCARE</label>
+    </customValue>
+    <customValue>
+        <fullName>UPMC HEALTH PLAN COMMERCIAL</fullName>
+        <default>false</default>
+        <label>UPMC HEALTH PLAN COMMERCIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>VALUE OPTIONS</fullName>
+        <default>false</default>
+        <label>VALUE OPTIONS</label>
+    </customValue>
+    <customValue>
+        <fullName>VALUE OPTIONS MBHP</fullName>
+        <default>false</default>
+        <label>VALUE OPTIONS MBHP</label>
+    </customValue>
+    <customValue>
+        <fullName>WEB TPA</fullName>
+        <default>false</default>
+        <label>WEB TPA</label>
+    </customValue>
+    <customValue>
+        <fullName>WESTERN GROWERS ASSURANCE TRUST</fullName>
+        <default>false</default>
+        <label>WESTERN GROWERS ASSURANCE TRUST</label>
+    </customValue>
+    <customValue>
+        <fullName>ZENITH AMERICAN HOLDING</fullName>
+        <default>false</default>
+        <label>ZENITH AMERICAN HOLDING</label>
+    </customValue>
+    <masterLabel>Lead Submit Claims to</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,135 @@
+<aura:component controller="PreAssesment_SHA_PTH_MH_TH" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+     <!-- <ltng:require styles="{!$Resource.popupCSS}" />  -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <aura:attribute type="Map" name="SAHfieldsMap" default="{}"/>
+    <aura:attribute name="key" type="string"/>
+    <aura:attribute name="value" type="string"/>    
+    <aura:attribute name="customers" type="List" />  
+    <aura:attribute name="SahList" type="Substance_Abuse_History__c[]"/> 
+    
+    <aura:attribute name="Medication" type="String[]"/> 
+   
+      <aura:html tag="style">
+        .slds-modal__container{
+        max-width: 80rem !important;
+        width:90% !important;
+        }
+    </aura:html>
+    
+    <div class="slds-page-header">
+        <h1 class="slds-page-header__title">Medication History</h1>
+    </div>
+
+ 
+
+    <table class="slds-table slds-table_bordered"> 
+        <thead>
+            <tr class="slds-text-title_caps">
+                
+                <th scope="col">
+                    <div class="slds-truncate " title="Name of the Medication">Name of the Medication</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate " title="Date of Last Use">Date of Last Use</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate " title="Dosage">Dosage</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate " title="Frequency">Frequency</div>
+                </th>
+                
+                <th scope="col">
+                    <div class="slds-truncate " title="Length of Prescription">Length of Prescription</div>
+                </th>
+               <th scope="col">
+                    <div class="slds-truncate"  title="Current Compliance">Current Compliance</div>
+                </th>  
+                  <th scope="col">
+                    <div class="slds-truncate"  title="explanation">explanation</div>
+                </th>  
+                
+                <th scope="col">
+                    <div class="slds-truncate"></div>
+                </th>
+                
+            </tr>
+        </thead>   
+        <tbody> 
+            
+            <aura:iteration items="{!v.SahList}" var="MHInstance" indexVar="rowIndex">
+                <br></br>
+                <tr class="slds-text-title_caps">
+                   
+                  
+                    <td class="SelectClass Method">
+                        <lightning:select class="slds-select" name="select"  value="{!MHInstance.Name_of_the_Medication__c}">
+                            <option value="{!co}">None</option>
+                            <aura:iteration items="{!v.Medication}" var="co">
+                                <option value="{!co}">{!co}</option>
+                            </aura:iteration>
+                        </lightning:select>
+                    </td>
+                   
+                    
+                    <td class="SelectClass Method">
+                        <ui:inputDate value = "{!MHInstance.Date_of_Last_Use__c}" displayDatePicker="true" format="MM/DD/YY"/>
+                    </td>
+                    
+                    <td class="SelectClass Method">
+                      <lightning:input class = "slds-input method"  label="" placeholder="" value="{!MHInstance.Dosage__c}"/>
+                    </td>
+                    
+                    <td class= "SelectClass Method">
+                        <lightning:input class = "slds-input method"  label="" placeholder="" value="{!MHInstance.Frequency__c}"/>
+                    </td>  
+                    
+                    
+                    
+                    <td class = "SelectClass Method">
+                     <lightning:input class = "slds-input method"  label="" placeholder="" value="{!MHInstance.Length_of_Prescription__c}"/>
+                    </td> 
+                    
+                    <td class = "SelectClass Method">
+                     <lightning:select class="slds-select method" name="select"  value="{!MHInstance.Current_Compliance__c}">
+                          <option value="">Yes</option>      
+                         <option value="">No</option>
+                             
+                        </lightning:select>
+                    
+                    </td>
+                    
+                    <td class = "SelectClass Method">
+                     <lightning:input class = "slds-input method"  label="" placeholder="" value="{!MHInstance.Current_Compliance_explanation__c}"/>
+                    </td>
+                                       
+                    <td>
+                        <aura:if isTrue="{!rowIndex == 0}">
+                            <aura:if isTrue="{!lessthanorequal(v.SahList.length,5)}">
+                                <a onclick="{!c.addNewRow}">
+                                    <lightning:icon iconName="utility:add" class="slds-icon slds-icon_small" size="small" alternativeText="add"/>
+                                    <span class="slds-assistive-text">Add Icon</span>
+                                </a>
+                                <aura:set attribute="else">
+                                    <lightning:buttonIcon size='large' iconName="utility:add" variant="bare"  alternativeText="Add" disabled='true'  />  
+                                </aura:set>
+                            </aura:if>   
+                            
+                            <aura:set attribute="else">
+                                <a onclick="{!c.removeDeletedRow}" data-value="{!rowIndex}">
+                                    <lightning:icon variant="error" iconName="utility:delete" class="slds-icon slds-icon_small" size="small" alternativeText="icon"/>
+                                    <span class="slds-assistive-text">Delete Icon</span>
+                                </a>
+                            </aura:set> 
+                        </aura:if>
+                    </td> 
+                </tr>
+                
+                
+            </aura:iteration>
+        </tbody>
+    </table>
+    <br/>
+    
+    <button class="slds-button slds-button_brand" onclick="{!c.Save}">Save</button>  
+</aura:component>
